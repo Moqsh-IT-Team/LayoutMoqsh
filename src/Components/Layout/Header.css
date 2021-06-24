@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav-bar {
+  margin-top: 10px;
+  display: flex;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.164);
+  justify-content: space-around;
+}
+
+.nav-bar p {
+  display: inline;
+  padding: 5px 0;
+  text-align: center;
+}
