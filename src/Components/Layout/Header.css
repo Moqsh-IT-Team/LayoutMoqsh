@@ -5,13 +5,14 @@
 .nav-bar {
   margin-top: 10px;
   display: flex;
-  height: 30px;
+  height: 70px;
+  line-height: 70px;
   background-color: rgba(0, 0, 0, 0.164);
   justify-content: space-around;
+  position: sticky;
 }
 
 .nav-bar p {
-  display: inline;
-  padding: 5px 0;
+  display: inline-block;
   text-align: center;
 }

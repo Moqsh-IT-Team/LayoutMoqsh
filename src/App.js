@@ -3,10 +3,12 @@ import "./App.css";
 import NavDrawer from "./Components/Layout/NavDrawer";
 const App = (props) => {
   return (
-    <div className="app">
-      <Header />
-      <NavDrawer></NavDrawer>
-    </div>
+    <>
+      <div className="app">
+        <Header />
+      </div>
+      <NavDrawer />
+    </>
   );
 };
 export default App;
