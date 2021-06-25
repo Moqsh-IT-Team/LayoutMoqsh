@@ -1,6 +1,6 @@
-import First from "E:/CFC MERN Course/MOQSH Website/LayoutMoqsh/src/Assets/Images/First.jpg";
-import Second from "E:/CFC MERN Course/MOQSH Website/LayoutMoqsh/src/Assets/Images/Second.jpg";
-import Third from "E:/CFC MERN Course/MOQSH Website/LayoutMoqsh/src/Assets/Images/Third.jpg";
+import First from "../../Assets/Images/First.jpg";
+import Second from "../../Assets/Images/Second.jpg";
+import Third from "../../Assets/Images/Third.jpg";
 import "./slider.css";
 
 export default [

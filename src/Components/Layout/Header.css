@@ -3,15 +3,18 @@
   padding: 0;
 }
 .nav-bar {
-  margin-top: 10px;
   display: flex;
+  position: sticky;
+  top: 0;
   height: 70px;
   line-height: 70px;
   background-color: rgba(0, 0, 0, 0.164);
   justify-content: space-around;
   position: sticky;
 }
-
+header {
+  margin-top: 0;
+}
 .nav-bar p {
   display: inline-block;
   text-align: center;
