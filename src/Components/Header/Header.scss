@@ -13,22 +13,27 @@
     height: 100%;
     border-radius: 0 0 20px 20px;
     background-color: #5f5e5e5b;
-    padding: 0 26px 0 10px;
-    @include make-flex($just: space-between, $dir: row);
+    padding: 0 0;
+    @include make-flex($just: space-evenly, $dir: row);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.644);
     .Header {
       &__logo {
         height: 65px;
         width: 50px;
       }
       &__contents {
-        width: 45%;
-        height: 100%;
+        width: 70%;
+        padding-left: 10vw;
+        :hover {
+          transition: 0.5s;
+          color: rgba(32, 32, 32, 0.555);
+        }
         @include make-flex($dir: row);
-        a {
+        p {
           font-family: "Raleway", sans-serif;
           text-align: center;
-          font-size: 1.3rem;
-          font-weight: 900;
+          font-size: 1.3vw;
+          font-weight: 500;
           color: white;
         }
       }
