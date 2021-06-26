@@ -3,6 +3,7 @@
   padding: 0;
 }
 .nav-bar {
+  z-index: 1000;
   display: flex;
   position: sticky;
   top: 0;
