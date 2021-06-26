@@ -1,0 +1,11 @@
+.sponsors {
+  width: 100%;
+  height: 20em;
+  background-color: #ffa900;
+}
+
+.sponsors h1 {
+  display: inline-block;
+  text-align: center;
+  margin-top: 4em;
+}

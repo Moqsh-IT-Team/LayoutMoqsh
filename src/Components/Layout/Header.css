@@ -3,19 +3,35 @@
   padding: 0;
 }
 .nav-bar {
+  z-index: 1000;
   display: flex;
   position: sticky;
   top: 0;
   height: 70px;
   line-height: 70px;
-  background-color: rgba(0, 0, 0, 0.164);
+  background-color: rgba(0, 0, 0, 0.589);
   justify-content: space-around;
   position: sticky;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
 header {
   margin-top: 0;
 }
-.nav-bar p {
-  display: inline-block;
-  text-align: center;
+.nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar ul li {
+  display: inline;
+  /* padding-left: 2em;
+  padding-right: 2em;
+  text-align: center; */
+}
+
+.logo {
+  display: inline;
+  padding-left: 2em;
 }
