@@ -1,0 +1,78 @@
+@import "../../styles/mixins";
+
+.HeaderContainer {
+  position: fixed;
+  height: 75px;
+  margin: auto;
+  width: 100%;
+  @include make-flex($just: flex-start);
+  &__Header {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+      0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    width: 95%;
+    height: 100%;
+    border-radius: 0 0 20px 20px;
+    background-color: #5f5e5e5b;
+    padding: 0 26px 0 10px;
+    @include make-flex($just: space-between, $dir: row);
+    img {
+      filter: drop-shadow(0 0 0.5rem black);
+    }
+    .Header {
+      &__logo {
+        height: 65px;
+        width: 50px;
+      }
+      &__contents {
+        width: 45%;
+        height: 100%;
+        @include make-flex($dir: row);
+        .contents__item {
+          text-align: center;
+        }
+        a {
+          font-family: "Raleway", sans-serif;
+          text-align: center;
+          font-size: 1.4vw;
+          font-weight: 500;
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.nav-bar {
+  z-index: 1000;
+  display: flex;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  line-height: 70px;
+  background-color: rgba(0, 0, 0, 0.589);
+  justify-content: space-around;
+  position: sticky;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+header {
+  margin-top: 0;
+}
+.nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar ul li {
+  display: inline;
+  /* padding-left: 2em;
+  padding-right: 2em;
+  text-align: center; */
+}
+
+.logo {
+  display: inline;
+  padding-left: 2em;
+}

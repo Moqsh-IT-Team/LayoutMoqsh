@@ -1,0 +1,12 @@
+.Maincontainer {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+
+  &__LandingSection {
+  }
+  &__AboutSection {
+  }
+  &__SpeakersSection {
+  }
+}
