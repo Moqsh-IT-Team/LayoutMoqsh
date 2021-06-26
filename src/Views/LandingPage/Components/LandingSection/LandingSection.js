@@ -17,7 +17,6 @@ function LandingSection() {
           <h1 className="LandingPageBody__text__H1B">Starts With Us</h1>
         </div>
       </div>
-      );
     </section>
   );
 }
