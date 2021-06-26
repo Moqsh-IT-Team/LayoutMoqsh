@@ -2,11 +2,11 @@
   height: 100vh;
   width: 100vw;
 }
-body {
+/* body {
   background: #f3904f;
   background: -webkit-linear-gradient(to right, #3b4371, #f3904f);
   background: linear-gradient(to right, #3b4371, #f3904f);
-}
+} */
 /* include border and padding in element width and height */
 * {
   box-sizing: border-box;
