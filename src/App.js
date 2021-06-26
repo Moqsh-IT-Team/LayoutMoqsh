@@ -1,15 +1,14 @@
 import Header from "./Components/Layout/Header";
-import NavDrawer from "./Components/Layout/NavDrawer";
 import Slider from "./Components/Event_Carousel/Slider";
-
+import Footer from "./Components/Layout/Footer";
 const App = (props) => {
   return (
     <>
       <Header />
-      <NavDrawer />
       <div className="carousel">
         <Slider />
       </div>
+      <Footer />
     </>
   );
 };
