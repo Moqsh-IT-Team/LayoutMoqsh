@@ -1,6 +1,6 @@
 import "./Footer.css";
 import logo from "./../../Assets/Images/logo.jpg";
-import { IoLogoInstagram } from "react-icons/io";
+// import { IoLogoInstagram } from "react-icons/io";
 import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import { MdEmail, MdCall } from "react-icons/md";
 const Footer = () => {
@@ -32,7 +32,7 @@ const Footer = () => {
             <ul>
               <li>
                 <a href="/1">
-                  <IoLogoInstagram size="3em" />
+                  {/* <IoLogoInstagram size="3em" /> */}
                 </a>
               </li>
               <li>
