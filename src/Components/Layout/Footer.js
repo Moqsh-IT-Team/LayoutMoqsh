@@ -1,5 +1,8 @@
 import "./Footer.css";
 import logo from "./../../Assets/Images/logo.jpg";
+import { IoLogoInstagram } from "react-icons/io";
+import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
+import { MdEmail, MdCall } from "react-icons/md";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -24,7 +27,38 @@ const Footer = () => {
           </p>
         </div>
         <div className="one-fourth">
-          <h1>Connect With Us</h1>
+          <h1>Connect </h1>
+          <div className="icon">
+            <ul>
+              <li>
+                <a href="/1">
+                  <IoLogoInstagram size="3em" />
+                </a>
+              </li>
+              <li>
+                <a href="/2">
+                  <AiFillFacebook size="3em" />
+                </a>
+              </li>
+              <li>
+                <a href="/3">
+                  <AiFillLinkedin size="3em" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="contact">
+            <div>
+              <MdEmail size="2em" /> <p>lorem@lorem</p>
+            </div>
+            <div>
+              <MdEmail size="2em" /> <p>lorem@lorem</p>
+            </div>
+            <div>
+              <MdCall size="2em" /> <p>+91 12345 67890</p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

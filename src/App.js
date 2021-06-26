@@ -2,6 +2,7 @@ import Header from "./Components/Layout/Header";
 import Slider from "./Components/Event_Carousel/Slider";
 import Footer from "./Components/Layout/Footer";
 import Sponsors from "./Components/Layout/Sponsors";
+import "./App.css";
 const App = (props) => {
   return (
     <>

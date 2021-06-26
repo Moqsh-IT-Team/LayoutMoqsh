@@ -7,13 +7,11 @@
 
 .container {
   display: flex;
-  flex-direction: row;
   color: white;
-  margin-right: auto;
-  margin-left: auto;
   padding-right: 10em;
   padding-left: 10em;
   width: 100%;
+  font-size: 1rem;
 }
 .one-fourth {
   flex: 0 0 25%;
@@ -27,15 +25,40 @@
 }
 .one-half h1,
 .one-fourth h1 {
+  padding-bottom: 1.5em;
   text-align: center;
   color: #e8f0f2;
 }
-
-.one-half h1::before {
-  width: 30px;
-  content: " ";
-  position: absolute;
-  border-top: solid 3px #f50136;
-  left: 0;
-  top: 0;
+.icon ul {
+  display: flex;
+  align-items: stretch; /* Default */
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.icon ul li {
+  display: inline-block;
+  width: auto;
+}
+.icon {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.8em;
+}
+svg {
+  width: 40px;
+}
+.contact {
+  padding-top: 1em;
+  padding-left: 1.8em;
+  align-items: center;
+}
+.contact div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.contact div p {
+  padding-left: 10px;
 }
