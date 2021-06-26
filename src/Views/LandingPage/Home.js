@@ -1,9 +1,12 @@
 import "./Home.scss";
 
+import Header from "../../Components/Header/Header";
+
 function Home() {
   return (
     <div className="Maincontainer">
-      <p>Hello there</p>
+      <Header />
+      <section className="Maincontainer__LandingPage"></section>
     </div>
   );
 }
