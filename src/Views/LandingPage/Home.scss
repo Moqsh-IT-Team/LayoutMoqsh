@@ -1,12 +1,12 @@
+.Maincontainer {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
 
-
-.Maincontainer{
-    &__LandingPage{
-        height: 100vh;
-        width: 100%;
-        background-image: url("../../Assets/Images/BackGround.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: #C0E1FF;
-    }
+  &__LandingSection {
+  }
+  &__AboutSection {
+  }
+  &__SpeakersSection {
+  }
 }

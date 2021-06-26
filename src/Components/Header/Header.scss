@@ -24,7 +24,7 @@
         width: 45%;
         height: 100%;
         @include make-flex($dir: row);
-        p {
+        a {
           font-family: "Raleway", sans-serif;
           text-align: center;
           font-size: 1.3rem;
