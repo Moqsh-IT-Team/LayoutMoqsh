@@ -1,7 +1,7 @@
 import "./EventSection.scss";
 import Card from "../../../../Components/Card/Card";
 import { useEmblaCarousel } from "embla-carousel/react";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import React from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
@@ -14,7 +14,6 @@ import SectionHeader from "../../../../Components/SectionHeading/SectionHeading"
 function EventSection() {
   let options = { loop: false, startIndex: 1 };
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
-  // const [Url, setUrl] = useState();
 
   useEffect(() => {
     if (emblaApi) {
@@ -23,9 +22,7 @@ function EventSection() {
 
   return (
     <section id="EventSection" className="EventSection">
-      {/* <div className="EventSection__Heading"> */}
-        <SectionHeader text="Events" />
-      {/* </div> */}
+      <SectionHeader text="Events" />
       <div className="EventSection__CarouselContainer">
         <AiOutlineLeft
           onClick={() => {

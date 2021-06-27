@@ -5,7 +5,7 @@
 .LandingSection {
   height: 100vh;
   width: 100%;
-  scroll-snap-align: start;
+  // scroll-snap-align: start;
 
   background-image: url("../../../../Assets/Images/BackGround.png");
   background-repeat: no-repeat;
@@ -55,15 +55,4 @@
       }
     }
   }
-}
-
-.CountdownText {
-  height: 15vh;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 15vh;
-  font-family: "Raleway";
-  font-size: 1.6vw;
-  color: rgba(153, 9, 9, 0.719);
-  filter: drop-shadow(0 0 0.7rem rgb(0, 0, 0));
 }

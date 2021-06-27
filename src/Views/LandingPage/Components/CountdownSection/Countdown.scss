@@ -1,0 +1,49 @@
+@import "../../../../styles/mixins";
+
+.CountdownSection {
+  @include make-flex();
+  row-gap: 5rem;
+  height: 50vh;
+  background-color: #3e2979;
+
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
+  }
+  &__Countdown {
+    height: auto;
+    @include make-flex($dir: row, $just: space-around);
+
+    text-align: center;
+    font-family: "Raleway";
+    span {
+      font-size: 5vw;
+      font-weight: 700;
+    }
+    div {
+      display: inline;
+    }
+    .Countdown {
+      &__days,
+      &__hours,
+      &__minutes {
+        width: auto;
+        color: #C0E1FF;
+      }
+      &__seconds {
+        width: auto;
+        color: white;
+      }
+    }
+    p {
+      padding-top: 20px;
+      text-transform: uppercase;
+      font-size: 2vw;
+      // font-weight: bold;
+      color: rgb(255, 255, 255);
+    }
+  }
+}
