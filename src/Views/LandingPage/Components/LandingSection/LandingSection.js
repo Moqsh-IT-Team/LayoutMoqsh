@@ -19,7 +19,9 @@ function LandingSection() {
         </div>
       </div>
       <div className="CountdownText">
-        <h1>Days Until Exciting events and contests worth $2000</h1>
+        <h1>
+          Exciting events and contests with prize pool worth $2000 Coming Soon
+        </h1>
       </div>
       <Countdown />
     </section>

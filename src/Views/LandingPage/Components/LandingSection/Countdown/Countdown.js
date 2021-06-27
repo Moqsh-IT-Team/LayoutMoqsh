@@ -4,7 +4,7 @@ import Time from "./Time";
 
 const calculateTimeLeft = () => {
   let year = new Date().getFullYear();
-  let difference = +new Date(`7/7/${year}`) - +new Date();
+  let difference = +new Date(`11/7/${year}`) - +new Date();
   let timeLeft = {};
   if (difference > 0) {
     timeLeft = {
