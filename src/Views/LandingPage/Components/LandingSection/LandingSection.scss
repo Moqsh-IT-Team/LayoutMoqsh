@@ -1,3 +1,5 @@
+@import "../../../../styles/mixins";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&display=swap");
 .LandingSection {
   height: 100vh;
   width: 100%;
@@ -8,11 +10,8 @@
   background-size: cover;
   background-color: #c0e1ff;
 }
-@import "../../../../styles/mixins";
-
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&display=swap");
 .LandingPageBody {
-  padding-top: 10em;
+  padding-top: 15vh;
   @include make-flex(row, center, center);
   width: 100vw;
   justify-content: space-between;
@@ -36,7 +35,7 @@
     text-transform: uppercase;
     h1 {
       font-weight: 800;
-      filter: drop-shadow(0 0 0.3rem black);
+      filter: drop-shadow(0 0 0.2rem black);
     }
     &__H1A,
     &__H1B {
@@ -54,4 +53,15 @@
       }
     }
   }
+}
+
+.CountdownText {
+  height: 15vh;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 15vh;
+  font-family: "Raleway";
+  font-size: 1.6vw;
+  color: rgba(153, 9, 9, 0.719);
+  filter: drop-shadow(0 0 0.7rem rgb(0, 0, 0));
 }
