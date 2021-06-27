@@ -1,6 +1,7 @@
 @import "../../styles/mixins";
 
 .HeaderContainer {
+  z-index: 2;
   position: fixed;
   height: 75px;
   margin: auto;

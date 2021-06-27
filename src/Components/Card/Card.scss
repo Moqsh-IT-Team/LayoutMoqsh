@@ -5,9 +5,6 @@
   width: 310px !important;
   z-index: 1 !important;
   margin: 0 -21px !important;
-  // margin: unset !important;
-  // display: flex !important;
-  // @include make-flex($just: space-around);
   img {
     height: 85% !important;
     width: 85% !important;
@@ -15,7 +12,6 @@
 }
 
 .Card {
-  // display: none;
   margin: 0 6px;
   @include make-flex($just: space-around);
   align-self: center;
