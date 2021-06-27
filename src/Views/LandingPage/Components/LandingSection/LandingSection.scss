@@ -1,25 +1,26 @@
 @import "../../../../styles/mixins";
+
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&display=swap");
+
 .LandingSection {
   height: 100vh;
   width: 100%;
-  scroll-snap-align: start;
+  // scroll-snap-align: start;
 
   background-image: url("../../../../Assets/Images/BackGround.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #c0e1ff;
+  @include make-flex();
 }
 .LandingPageBody {
-  padding-top: 15vh;
+  // padding-top: 10em;
   @include make-flex(row, center, center);
-  width: 100vw;
+  width: 70%;
   justify-content: space-between;
+
   &__img {
-    padding-left: 10vw;
-    width: 50vw;
-  }
-  &__img {
+    width: auto;
     img {
       height: 50vh;
       width: 25vw;
@@ -28,9 +29,9 @@
     }
   }
   &__text {
+    width: auto;
     font-size: 2.5vw;
     display: inline;
-    width: 50%;
     font-family: "Raleway";
     text-transform: uppercase;
     h1 {
@@ -39,6 +40,7 @@
     }
     &__H1A,
     &__H1B {
+      width: auto;
       opacity: 0.75;
       padding-left: 0.2em;
     }
@@ -53,15 +55,4 @@
       }
     }
   }
-}
-
-.CountdownText {
-  height: 15vh;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 15vh;
-  font-family: "Raleway";
-  font-size: 1.6vw;
-  color: rgba(153, 9, 9, 0.719);
-  filter: drop-shadow(0 0 0.7rem rgb(0, 0, 0));
 }
