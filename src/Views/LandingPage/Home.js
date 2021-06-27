@@ -6,6 +6,8 @@ import LandingSection from "./Components/LandingSection/LandingSection";
 import SpeakerSection from "./Components/SpeakerSection/SpeakerSection";
 import EventSection from "./Components/EventsSection/EventSection";
 import CountdownSection from "./Components/CountdownSection/Countdown";
+import FooterSection from "./Components/FooterSection/FooterSection";
+
 function Home() {
   return (
     <div className="Maincontainer">
@@ -15,6 +17,7 @@ function Home() {
       <AboutSection />
       <SpeakerSection />
       <EventSection />
+      <FooterSection />
     </div>
   );
 }
