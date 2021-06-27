@@ -1,0 +1,57 @@
+@import "../../styles/mixins";
+
+.is-selected {
+  height: 470px !important;
+  width: 310px !important;
+  z-index: 1 !important;
+  margin: 0 -21px !important;
+  // margin: unset !important;
+  // display: flex !important;
+  // @include make-flex($just: space-around);
+  img {
+    height: 85% !important;
+    width: 85% !important;
+  }
+}
+
+.Card {
+  // display: none;
+  margin: 0 6px;
+  @include make-flex($just: space-around);
+  align-self: center;
+  height: 414px;
+  width: 270px;
+  border-radius: 20px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.37);
+  background-color: white;
+  padding: 15px;
+
+  &__title {
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    height: auto;
+  }
+
+  &__image {
+    height: 80%;
+    @include make-flex();
+    img {
+      height: 85%;
+      width: 80%;
+    }
+  }
+  &__ViewMore {
+    width: 60%;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    height: 50px;
+  }
+}
