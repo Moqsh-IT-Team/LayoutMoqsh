@@ -23,7 +23,7 @@
     width: auto;
     img {
       height: 50vh;
-      width: 25vw;
+      width: auto;
       mix-blend-mode: darken;
       filter: drop-shadow(0 0 1rem black);
     }
@@ -52,6 +52,28 @@
       mix-blend-mode: darken;
       img {
         width: 8em;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 620px) {
+  .LandingSection {
+
+  }
+  .LandingPageBody{
+    @include make-flex();
+    width: 100%;
+    &__img {
+      img{
+        width: auto;
+      }
+    }
+    &__text {
+      font-size: unset;
+      h1{
+        white-space: nowrap;
       }
     }
   }
