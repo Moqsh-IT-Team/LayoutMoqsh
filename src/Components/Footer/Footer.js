@@ -1,67 +1,66 @@
-import "./Footer.css";
-import logo from "./../../Assets/Images/logo.jpg";
-// import { IoLogoInstagram } from "react-icons/io";
-import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
-import { MdEmail, MdCall } from "react-icons/md";
-const Footer = () => {
+import "./Footer.scss";
+import logo from "../../Assets/Images/logo.jpg";
+import {
+  AiOutlineHome,
+  AiOutlineCalendar,
+  AiOutlineDollarCircle,
+} from "react-icons/ai";
+
+import {
+  GrLinkedinOption,
+  GrFacebookOption,
+  GrInstagram,
+} from "react-icons/gr";
+
+import { BsMic } from "react-icons/bs";
+function Footer() {
   return (
-    <footer className="footer">
-      <div className="container">
-        <div className="one-fourth">
-          <img src={logo} alt="" />
-        </div>
-        <div className="one-half">
-          <h1>Lorem Ipsum</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed
-            elementum sapien. Etiam neque sapien, tristique at imperdiet ut,
-            sodales eget nisi. Interdum et malesuada fames ac ante ipsum primis
-            in faucibus. Vestibulum dignissim, lectus at dictum eleifend, nisi
-            nibh volutpat nulla, at suscipit tortor diam eu nunc. Sed fringilla
-            fermentum maximus. Donec aliquet ornare nulla in sagittis. Nam vel
-            consequat nisl. Donec massa nunc, tristique id malesuada ac,
-            venenatis ut orci. Praesent nec ipsum sit amet dui scelerisque
-            mattis eu sit amet ipsum. Proin scelerisque arcu vitae maximus
-            bibendum. Nam porttitor quam non hendrerit egestas. Aliquam ac
-            commodo urna.
+    <section id="FooterSection" className="FooterSection">
+      <div className="FooterSection__Left">
+        <div className="FooterSection__Description">
+          <span className="Heading">Moqsh</span>
+          <p className="Description">
+            “MOQSH... The Change Starts With Us.” What could be more exciting
+            than all your ideas coming true at one platform? MOQSH, the annual
+            management fest of Shiv Nadar University is back with an exciting
+            theme “Building Possibilities From Limitation” for this year along
+            with a series of events that will blow your mind! Stay tuned for
+            further updates..
           </p>
         </div>
-        <div className="one-fourth">
-          <h1>Connect </h1>
-          <div className="icon">
-            <ul>
-              <li>
-                <a href="/1">
-                  {/* <IoLogoInstagram size="3em" /> */}
-                </a>
-              </li>
-              <li>
-                <a href="/2">
-                  <AiFillFacebook size="3em" />
-                </a>
-              </li>
-              <li>
-                <a href="/3">
-                  <AiFillLinkedin size="3em" />
-                </a>
-              </li>
-            </ul>
+        <div className="FooterSection__QuickLinks">
+          <span className="Heading">QuickLinks</span>
+          <div className="QuickLinks">
+            <div className="QuickLinks__Home">
+              <AiOutlineHome />
+              <span>Home</span>
+            </div>
+            <div className="QuickLinks__Event">
+              <AiOutlineCalendar />
+              <span>Events</span>
+            </div>
+            <div className="QuickLinks__Sponsor">
+              <AiOutlineDollarCircle />
+              <span>Sponsor</span>
+            </div>
+            <div className="QuickLinks__Speaker">
+              <BsMic />
+              <span>Speakers</span>
+            </div>
           </div>
-
-          <div className="contact">
-            <div>
-              <MdEmail size="2em" /> <p>lorem@lorem</p>
-            </div>
-            <div>
-              <MdEmail size="2em" /> <p>lorem@lorem</p>
-            </div>
-            <div>
-              <MdCall size="2em" /> <p>+91 12345 67890</p>
-            </div>
+        </div>
+        <div className="FooterSection__Connect">
+          <span className="Heading">Connect with us</span>
+          <div className="FooterSection__Icons">
+            <GrLinkedinOption />
+            <GrFacebookOption />
+            <GrInstagram />
           </div>
         </div>
       </div>
-    </footer>
+      <img src={logo} alt="MoqshLogo" className="FooterSection__Right"></img>
+    </section>
   );
-};
+}
+
 export default Footer;

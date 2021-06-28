@@ -1,10 +1,10 @@
 @import "../../../../styles/mixins";
 
 .CountdownSection {
-  @include make-flex();
+  @include make-flex($dir: row);
   row-gap: 5rem;
-  height: 50vh;
-  background-color: #3e2979;
+  height: 35vh;
+  background-color: #0e32aa;
 
   h1 {
     text-transform: uppercase;
@@ -31,7 +31,7 @@
       &__hours,
       &__minutes {
         width: auto;
-        color: #C0E1FF;
+        color: #c0e1ff;
       }
       &__seconds {
         width: auto;
@@ -42,7 +42,6 @@
       padding-top: 20px;
       text-transform: uppercase;
       font-size: 2vw;
-      // font-weight: bold;
       color: rgb(255, 255, 255);
     }
   }
