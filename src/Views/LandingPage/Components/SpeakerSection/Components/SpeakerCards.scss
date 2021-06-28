@@ -1,0 +1,82 @@
+@import "../../../../../styles/mixins";
+
+.SpeakerCard {
+  height: 330px;
+  row-gap: 20px;
+  width: 440px;
+  max-width: 440px;
+  min-width: 255px;
+  border-radius: 20px;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  box-shadow: -1rem 0 3rem rgba(0, 0, 0, 0.349);
+  transition: 0.4s ease-out;
+  padding: 30px;
+  @include make-flex($just: flex-end);
+
+  &:not(:first-child) {
+    margin-left: -80px;
+  }
+  &:hover {
+    transform: translateY(-35px);
+    transition: 0.4s ease-out;
+  }
+  &:hover ~ .SpeakerCard {
+    position: relative;
+    left: 80px;
+    transition: 0.4s ease-out;
+  }
+  &__About {
+    @include make-flex();
+    row-gap: 20px;
+    font-family: "Raleway", sans-serif;
+  }
+
+  &__Name {
+    font-size: 1.6rem;
+  }
+  &__SmallDesc {
+    font-size: 1rem;
+    p {
+      max-height: 133px;
+      text-overflow: ellipsis;
+      //   white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+  &__content {
+    width: 90%;
+    column-gap: 20px;
+    @include make-flex($dir: row);
+  }
+  &__Image {
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  &__Date {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    @include make-flex();
+    font-family: "Raleway", sans-serif;
+    width: 154px;
+    height: 50px;
+    color: #fff;
+    background-color: rgb(65, 82, 82);
+    transform: translateY(50%);
+  }
+
+  &__ViewMore {
+    width: 60%;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    height: 50px;
+  }
+}
+
