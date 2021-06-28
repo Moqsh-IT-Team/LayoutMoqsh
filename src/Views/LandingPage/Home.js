@@ -6,7 +6,7 @@ import LandingSection from "./Components/LandingSection/LandingSection";
 import SpeakerSection from "./Components/SpeakerSection/SpeakerSection";
 import EventSection from "./Components/EventsSection/EventSection";
 import CountdownSection from "./Components/CountdownSection/Countdown";
-import FooterSection from "./Components/FooterSection/FooterSection";
+import Footer from "../../Components/Footer/Footer";
 
 function Home() {
   return (
@@ -17,7 +17,7 @@ function Home() {
       <AboutSection />
       <SpeakerSection />
       <EventSection />
-      <FooterSection />
+      <Footer />
     </div>
   );
 }
