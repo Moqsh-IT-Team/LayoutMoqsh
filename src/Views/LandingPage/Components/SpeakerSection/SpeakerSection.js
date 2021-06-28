@@ -1,10 +1,12 @@
 import SectionHeader from "../../../../Components/SectionHeading/SectionHeading";
 import "./SpeakerSection.scss";
+
 import img1 from "../../../../Assets/Temp/speaker1.png";
 import img2 from "../../../../Assets/Temp/speaker2.png";
 import img3 from "../../../../Assets/Temp/speaker3.png";
 
 import SpeakerCards from "./Components/SpeakerCards";
+
 
 function SpeakerSection() {
   return (
@@ -33,6 +35,7 @@ function SpeakerSection() {
       <button className="SpeakerSection__ViewMore">View More</button>
     </section>
   );
+
 }
 
 export default SpeakerSection;
