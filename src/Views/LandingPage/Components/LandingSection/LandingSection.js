@@ -8,7 +8,7 @@ function LandingSection() {
       <div className="LandingPageBody">
         <div className="LandingPageBody__img">
           <img src={logo} alt="" />
-        </div>
+        </div> 
 
         <div className="LandingPageBody__text">
           <div className="LandingPageBody__text__img">
