@@ -16,16 +16,23 @@
     background-color: #5f5e5e5b;
     padding: 0 26px 0 10px;
     @include make-flex($just: space-between, $dir: row);
-    img {
-      filter: drop-shadow(0 0 0.5rem black);
+    // img {
+    //   filter: drop-shadow(0 0 0.5rem black);
+    // }
+
+    #NavBarInput,
+    .hamButton {
+      display: none;
     }
+
     .Header {
+     
       &__logo {
         height: 65px;
         width: 50px;
       }
       &__contents {
-        width: 45%;
+        width: 556px;
         height: 100%;
         @include make-flex($dir: row);
         .contents__item {
@@ -34,46 +41,87 @@
         a {
           font-family: "Raleway", sans-serif;
           text-align: center;
-          font-size: 1.4vw;
+          font-size: 1.2rem;
           font-weight: 500;
           color: white;
           text-align: center;
+          text-decoration: none;
         }
       }
     }
   }
 }
 
-.nav-bar {
-  z-index: 1000;
-  display: flex;
-  position: sticky;
-  top: 0;
-  height: 70px;
-  line-height: 70px;
-  background-color: rgba(0, 0, 0, 0.589);
-  justify-content: space-around;
-  position: sticky;
-}
-a {
-  text-decoration: none;
-  color: white;
-}
-header {
-  margin-top: 0;
-}
-.nav-bar ul {
-  display: flex;
-  justify-content: space-between;
-}
-.nav-bar ul li {
-  display: inline;
-  /* padding-left: 2em;
-  padding-right: 2em;
-  text-align: center; */
-}
+@media only screen and (max-width: 620px) {
+  .HeaderContainer {
+    &__Header {
+      .hamButton {
+        z-index: 1;
+        position: relative;
+        width: auto;
+        @include make-flex();
+        label {
+          display: inline-block;
+          margin: unset;
+          span {
+            display: block;
+            width: 25px;
+            height: 10px;
+            border-top: 2px solid #eee;
+            transform-origin: 4px 0px;
+            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+            &:first-child {
+              transform-origin: 0% 0%;
+            }
+            &:nth-last-child(2) {
+              transform-origin: 0% 100%;
+            }
+          }
+        }
+      }
 
-.logo {
-  display: inline;
-  padding-left: 2em;
+      .Header {
+        &__ShowNav {
+          transform: translateY(0) !important;
+        }
+        &__contents {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100vh;
+          background: black;
+          color: white;
+          transform: translateY(-100%);
+          transition: transform 0.2s;
+          list-style: none;
+          padding-top: 4rem;
+
+          @include make-flex();
+          row-gap: 15px;
+          .contents__item {
+            width: 85%;
+            // background-color: rgb(204, 204, 204);
+            border-radius: 15px;
+            @include make-flex();
+            height: 50px;
+          }
+        }
+      }
+
+      #NavBarInput:checked ~ .hamButton > label > .span.HL1 {
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, 0px);
+      }
+      #NavBarInput:checked ~ .hamButton > label > .span.HL2 {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+      }
+      #NavBarInput:checked ~ .hamButton > label > .span.HL3 {
+        transform: rotate(-45deg) translate(1px, -6px);
+      }
+    }
+  }
 }
