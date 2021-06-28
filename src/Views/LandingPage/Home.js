@@ -10,7 +10,7 @@ import FooterSection from "./Components/FooterSection/FooterSection";
 
 function Home() {
   return (
-    <div className="Maincontainer">
+    <>
       <Header />
       <LandingSection />
       <CountdownSection />
@@ -18,7 +18,7 @@ function Home() {
       <SpeakerSection />
       <EventSection />
       <FooterSection />
-    </div>
+    </>
   );
 }
 
