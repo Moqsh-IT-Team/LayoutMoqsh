@@ -12,11 +12,19 @@ import rightEvent from "../../../../Assets/Temp/EventRight.png";
 import SectionHeader from "../../../../Components/SectionHeading/SectionHeading";
 
 function EventSection() {
-  let options = { loop: false, startIndex: 1 };
+  let options = { loop: true, startIndex: 1 };
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   useEffect(() => {
     if (emblaApi) {
+      emblaApi.on("scroll", () => {
+        emblaApi.slideNodes().forEach((obj, index) => {
+          obj.classList.remove("selected");
+        });
+        emblaApi
+          .slideNodes()
+          [emblaApi.selectedScrollSnap()].classList.add("selected");
+      });
     }
   }, [emblaApi]);
 
@@ -29,7 +37,7 @@ function EventSection() {
             emblaApi.scrollPrev();
           }}
         />
-        <div className="EventSection__Carousel" ref={emblaRef}>
+        <div className="EventSection__Carousel embla" ref={emblaRef}>
           <div className="embla__container">
             <Card
               className="embla__slide"
@@ -37,7 +45,7 @@ function EventSection() {
               ImgSrc={mainEvent}
             />
             <Card
-              className="embla__slide"
+              className="embla__slide selected"
               title="CONSULTAR"
               ImgSrc={leftEvent}
             />

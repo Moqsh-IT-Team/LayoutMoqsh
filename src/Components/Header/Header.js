@@ -1,7 +1,7 @@
 import "./Header.scss";
 
 import HeaderLogo from "../../Assets/Images/HeaderLogo.png";
-import moqsh from "../../Assets/Images/Moqsh3.jpeg";
+// import moqsh from "../../Assets/Images/Moqsh3.jpeg";
 function Header() {
   return (
     <div className="HeaderContainer">

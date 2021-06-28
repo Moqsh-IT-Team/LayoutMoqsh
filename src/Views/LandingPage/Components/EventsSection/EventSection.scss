@@ -14,27 +14,52 @@
   }
   &__CarouselContainer {
     height: 65%;
+    min-width: 401px;
     width: 70%;
     @include make-flex($dir: row);
+    // background-color: aqua;
     overflow: hidden;
     svg {
       height: 2.5rem;
+      width: auto;
     }
-  }
-  &__Carousel {
-    overflow: hidden;
-    @include make-flex($dir: row);
-    padding-left: 66px;
-    padding-right: 10px;
-    height: 100%;
-    width: 1600%;
+    .embla {
+      // background-color: blue;
+      min-width: 335px;
+      overflow: hidden;
+      padding: 10px 0;
+    }
     .embla__container {
       display: flex;
-      width: 37.1%;
     }
     .embla__slide {
       position: relative;
-      flex: 0 0 100%;
+      flex: 0 0 325px;
+      margin: 5px;
+    }
+  }
+
+  // &__Carousel {
+  //   overflow: hidden;
+  //   @include make-flex($dir: row);
+  //   padding-left: 66px;
+  //   padding-right: 10px;
+  //   height: 100%;
+  //   width: 1600%;
+  //   .embla__container {
+  //     display: flex;
+  //     width: 37.1%;
+  //   }
+  //   .embla__slide {
+  //     position: relative;
+  //     flex: 0 0 100%;
+  //   }
+  // }
+}
+@media only screen and (max-width: 570px) {
+  .EventSection {
+    &__CarouselContainer {
+      height: unset;
     }
   }
 }
