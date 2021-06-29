@@ -34,12 +34,12 @@
   }
   h1::before {
     content: open-quote;
-    color: rgb(209, 209, 7);
+    color: red;
     font-size: 1.5em;
   }
   h1::after {
-    color: rgb(209, 209, 7);
     content: close-quote;
+    color: red;
     font-size: 1.5em;
   }
   &__ViewMore {
