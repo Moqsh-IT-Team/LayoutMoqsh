@@ -24,12 +24,16 @@
       text-justify: distribute;
       line-height: 1.7em;
       font-size: 1.1rem;
+      overflow-y: scroll;
     }
   }
   p {
     color: black;
   }
   h1 {
+    @media only screen and (max-width: 620px) {
+      font-size: 1.5em;
+    }
     font-size: 2.5em;
   }
   h1::before {
@@ -53,6 +57,9 @@
     font-size: 1.1rem;
     cursor: pointer;
     height: 50px;
+    @media only screen and (max-width: 620px) {
+      height: 70px;
+    }
   }
   button:hover {
     background-color: black;
