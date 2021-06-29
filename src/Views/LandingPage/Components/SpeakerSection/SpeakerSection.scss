@@ -1,7 +1,49 @@
+@import "../../../../styles/mixins";
+
 .SpeakerSection {
   height: 100vh;
   width: 100%;
+  @include make-flex();
   // scroll-snap-align: start;
-
   background-color: #c0e1ff;
+  &__Container {
+    @include make-flex($dir: row);
+    height: 65%;
+    width: 80%;
+  }
+  &__ViewMore {
+    width: 60%;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  .SpeakerSection {
+    &__Container {
+      .SpeakerCard:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 620px) {
+  .SpeakerSection {
+    &__Container {
+      .SpeakerCard:nth-child(2) {
+        display: none;
+      }
+      .SpeakerCard:nth-child(1) {
+        &:hover {
+          transform: unset;
+        }
+      }
+    }
+  }
 }

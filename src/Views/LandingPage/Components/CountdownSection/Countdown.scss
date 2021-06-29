@@ -3,6 +3,7 @@
 .CountdownSection {
   @include make-flex($dir: row);
   row-gap: 5rem;
+  padding: 10px;
   height: 35vh;
   background-color: #0e32aa;
 
@@ -10,7 +11,7 @@
     text-transform: uppercase;
     text-align: center;
     font-family: "Raleway";
-    font-size: 2vw;
+    font-size: 2rem;
     color: rgb(255, 255, 255);
   }
   &__Countdown {
@@ -20,7 +21,7 @@
     text-align: center;
     font-family: "Raleway";
     span {
-      font-size: 5vw;
+      font-size: 3rem;
       font-weight: 700;
     }
     div {
@@ -41,8 +42,17 @@
     p {
       padding-top: 20px;
       text-transform: uppercase;
-      font-size: 2vw;
+      font-size: 1.1rem;
       color: rgb(255, 255, 255);
     }
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .CountdownSection {
+    @include make-flex($dir: column);
+    row-gap: 2rem;
+    height: 55vh;
+    background-color: #0e32aa;
   }
 }
