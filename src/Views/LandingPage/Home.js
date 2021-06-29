@@ -8,10 +8,9 @@ import EventSection from "./Components/EventsSection/EventSection";
 import SponsorSection from "./Components/SponsorSection/SponsorSection";
 import CountdownSection from "./Components/CountdownSection/Countdown";
 import Footer from "../../Components/Footer/Footer";
-
 function Home() {
   return (
-    <div className="Maincontainer">
+    <>
       <Header />
       <LandingSection />
       <CountdownSection />
@@ -20,7 +19,7 @@ function Home() {
       <EventSection />
       <SponsorSection/>
       <Footer />
-    </div>
+    </>
   );
 }
 
