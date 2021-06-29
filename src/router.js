@@ -1,6 +1,6 @@
 import * as views from "./Views/index";
 
-import { BrowserRouter,Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function Router() {
   return (

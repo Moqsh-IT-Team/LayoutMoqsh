@@ -5,7 +5,7 @@ import img1 from "../../../../Assets/Temp/speaker1.png";
 import img2 from "../../../../Assets/Temp/speaker2.png";
 import img3 from "../../../../Assets/Temp/speaker3.png";
 
-import SpeakerCards from "./Components/SpeakerCards";
+import SpeakerCards from "./Components/SpeakerCards/SpeakerCards";
 
 
 function SpeakerSection() {
