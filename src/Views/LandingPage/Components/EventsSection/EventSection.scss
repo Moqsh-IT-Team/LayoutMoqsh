@@ -12,7 +12,6 @@
     position: absolute;
   }
   &__CarouselContainer {
-    height: 65%;
     min-width: 401px;
     width: 70%;
     @include make-flex($dir: row);

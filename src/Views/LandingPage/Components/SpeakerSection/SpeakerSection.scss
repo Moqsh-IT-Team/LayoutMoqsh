@@ -9,10 +9,10 @@
   &__Container {
     @include make-flex($dir: row);
     height: 65%;
-    width: 80%;
+    width: 90%;
   }
   &__ViewMore {
-    width: 60%;
+    width: 320px;
     border-radius: 10px;
     border: none;
     background-color: #ff0000;
@@ -33,7 +33,7 @@
     }
   }
 }
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 885px) {
   .SpeakerSection {
     &__Container {
       .SpeakerCard:nth-child(2) {
