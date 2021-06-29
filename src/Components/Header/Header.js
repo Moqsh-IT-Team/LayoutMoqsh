@@ -49,7 +49,7 @@ function Header() {
             <a href="#AboutSection">About</a>
           </div>
           <div className="contents__item events">
-            <a href="#SpeakerSection">Events</a>
+            <a href="#EventSection">Events</a>
           </div>
           <div className="contents__item speakers">
             <a href="#SpeakerSection">Speakers</a>
@@ -58,7 +58,7 @@ function Header() {
             <a href="#SpeakerSection">Team</a>
           </div>
           <div className="contents__item contact">
-            <a href="#SpeakerSection">Reach Us</a>
+            <a href="#FooterSection">Reach Us</a>
           </div>
         </div>
       </div>
