@@ -1,15 +1,26 @@
 @import "../../../../styles/mixins";
 
 .SpeakerSection {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
+  row-gap: 50px;
+  padding-top: 2rem;
   @include make-flex();
   // scroll-snap-align: start;
   background-color: #c0e1ff;
   &__Container {
+    @include make-flex();
+    min-height: 65%;
+    width: 71%;
+    row-gap: 50px;
+  }
+  &__preview {
     @include make-flex($dir: row);
-    height: 65%;
-    width: 90%;
+    width: 110%;
+    column-gap: 30px;
+    row-gap: 30px;
+    position: relative;
+    flex-wrap: wrap;
   }
   &__ViewMore {
     width: 320px;
@@ -24,7 +35,7 @@
   }
 }
 
-@media only screen and (max-width: 1090px) {
+@media only screen and (max-width: 1344px) {
   .SpeakerSection {
     &__Container {
       .SpeakerCard:nth-child(3) {
@@ -33,16 +44,11 @@
     }
   }
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 886px) {
   .SpeakerSection {
     &__Container {
-      .SpeakerCard:nth-child(2) {
-        display: none;
-      }
       .SpeakerCard:nth-child(1) {
-        &:hover {
-          transform: unset;
-        }
+        display: none;
       }
     }
   }
