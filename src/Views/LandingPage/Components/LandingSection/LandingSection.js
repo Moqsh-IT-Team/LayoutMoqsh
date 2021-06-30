@@ -1,6 +1,7 @@
 import "./LandingSection.scss";
 import logo from "../../../../Assets/Images/logo.jpg";
 import moqsh from "../../../../Assets/Images/Moqsh3.jpeg";
+import CountdownSection from "./CountdownSection/Countdown";
 
 function LandingSection() {
   return (
@@ -8,7 +9,7 @@ function LandingSection() {
       <div className="LandingPageBody">
         <div className="LandingPageBody__img">
           <img src={logo} alt="" />
-        </div> 
+        </div>
 
         <div className="LandingPageBody__text">
           <div className="LandingPageBody__text__img">
@@ -18,6 +19,7 @@ function LandingSection() {
           <h1 className="LandingPageBody__text__H1B">Starts With Us</h1>
         </div>
       </div>
+      <CountdownSection />
     </section>
   );
 }
