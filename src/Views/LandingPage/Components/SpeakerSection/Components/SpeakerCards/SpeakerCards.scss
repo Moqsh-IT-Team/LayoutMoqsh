@@ -1,31 +1,30 @@
 @import "../../../../../../styles/mixins";
 
 .SpeakerCard {
-  height: 330px;
+  height: 460px;
   row-gap: 20px;
-  width: 440px;
-  max-width: 440px;
-  min-width: 255px;
+  width: 330px;
+  max-width: 330px;
+  min-width: 301px;
   border-radius: 20px;
   position: relative;
   background-color: rgb(255, 255, 255);
-  box-shadow: -1rem 0 3rem rgba(0, 0, 0, 0.349);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.349);
   transition: 0.4s ease-out;
   padding: 30px;
   @include make-flex($just: flex-end);
+  transition: all 0.5s ease-in-out;
 
-  &:not(:first-child) {
-    margin-left: -80px;
+  overflow: hidden;
+
+  &__Active {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    max-width: unset;
   }
-  &:hover {
-    transform: translateY(-35px);
-    transition: 0.4s ease-out;
-  }
-  &:hover ~ .SpeakerCard {
-    position: relative;
-    left: 80px;
-    transition: 0.4s ease-out;
-  }
+
   &__About {
     @include make-flex();
     row-gap: 20px;
@@ -34,6 +33,9 @@
 
   &__Name {
     font-size: 1.6rem;
+    font-weight: 600;
+    font-family: "Merienda", cursive;
+    text-align: center;
   }
   &__SmallDesc {
     font-size: 1rem;
@@ -45,9 +47,10 @@
     }
   }
   &__content {
-    width: 90%;
-    column-gap: 20px;
-    @include make-flex($dir: row);
+    height: 100%;
+    width: 100%;
+    row-gap: 40px;
+    @include make-flex();
   }
   &__Image {
     width: 100px;
@@ -55,16 +58,20 @@
   }
 
   &__Date {
-    position: absolute;
-    top: 0px;
-    left: 0px;
     @include make-flex();
     font-family: "Raleway", sans-serif;
-    width: 154px;
-    height: 50px;
     color: #fff;
-    background-color: rgb(65, 82, 82);
-    transform: translateY(50%);
+
+    background-color: #05054b;
+    text-align: center;
+    width: 300px;
+    height: 35px;
+    font-size: 1.2rem;
+
+    position: absolute;
+    top: 25px;
+    left: -106px;
+    transform: rotate(-45deg);
   }
 
   &__ViewMore {

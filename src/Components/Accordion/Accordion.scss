@@ -1,0 +1,95 @@
+$midnight: #232323;
+$clouds: #ecf0f1;
+
+@import "../../styles/mixins";
+
+.tabs {
+  overflow: hidden;
+  width: 105%;
+  border: solid white 2px;
+  position: relative;
+  margin-bottom: 2rem;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.tab {
+  width: 100%;
+  color: white;
+
+  // .tab-content > * {
+  //   margin-top: 15px;
+  //   margin-bottom: 15px;
+  // }
+
+  &-label {
+    @include make-flex($dir: row, $just: space-between);
+    padding: 1em;
+    background: $midnight;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      background: darken($midnight, 10%);
+    }
+
+    &::after {
+      content: "\276F";
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      transition: all 0.35s;
+    }
+  }
+
+  &-content {
+    @include make-flex($dir: row);
+    flex-wrap: wrap;
+    max-height: 0;
+    // align-content: center;
+    padding: 0 2em;
+    row-gap: 30px;
+    column-gap: 30px;
+    color: $midnight;
+    background: white;
+    flex-wrap: wrap;
+    transition: all 0.35s;
+  }
+
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: $midnight;
+    cursor: pointer;
+
+    &:hover {
+      background: darken($midnight, 10%);
+    }
+  }
+}
+
+input:checked {
+  + .tab-label {
+    background: darken($midnight, 10%);
+
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+
+  ~ .tab-content {
+    max-height: 1500vh;
+    padding: 2em;
+  }
+}
+@media only screen and (max-width: 886px) {
+  .tabs {
+    width: 330px;
+  }
+}
