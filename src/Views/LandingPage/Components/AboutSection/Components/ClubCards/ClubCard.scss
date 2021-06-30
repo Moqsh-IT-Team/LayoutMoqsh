@@ -1,0 +1,14 @@
+@import "../../../../../../styles/mixins";
+
+.ClubCard {
+  @include make-flex();
+  border-radius: 10px;
+  position: relative;
+  flex: 0 0 235px;
+  // background-color: aliceblue;
+  margin-right: 10px;
+  margin-left: 10px;
+  img {
+    width: 90%;
+  }
+}

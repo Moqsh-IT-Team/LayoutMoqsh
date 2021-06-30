@@ -1,10 +1,10 @@
 import "./Modal.scss";
 
-function Modal({ id, name, src,desc }) {
+function Modal({ id, name, src, desc }) {
   return (
     <div id="Modal" className={`Modal Modal${id}`}>
       <div className="Modal__Container">
-        <div class="Modal__header">
+        <div className="Modal__header">
           <h2>{name}</h2>
           <span
             onClick={() => {
