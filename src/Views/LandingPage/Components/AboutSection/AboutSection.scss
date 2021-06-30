@@ -7,14 +7,13 @@
   // scroll-snap-align: start;
   @include make-flex();
   &__Text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    @include make-flex();
+    row-gap: 30px;
     align-items: center;
 
     font-family: "Raleway";
     color: rgb(5, 5, 75);
-    height: 65%;
+    // height: 65%;
     width: 80%;
     padding: 2rem;
     padding-top: 1rem;
@@ -63,5 +62,40 @@
   }
   button:hover {
     background-color: black;
+  }
+
+  &__Clubs {
+    overflow: hidden;
+    // height: 100px;
+    width: 100%;
+    // background-color: aqua;
+  }
+  &__container {
+    display: flex;
+  }
+  &__slide {
+    position: relative;
+    flex: 0 0 100px;
+    width: 100px;
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .AboutSection {
+    padding: 2rem 0;
+    height: auto;
+    &__Text {
+      width: 100%;
+      height: unset;
+    }
+    &__ViewMore {
+      width: 85%;
+    }
+  }
+}
+@media only screen and (max-width: 1015px) {
+  .AboutSection {
+    height: auto;
   }
 }

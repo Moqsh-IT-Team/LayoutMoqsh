@@ -42,22 +42,52 @@ function Header() {
         </div>
 
         <div className="Header__contents">
-          <div className="contents__item home">
+          <div
+            onClick={() => {
+              document.getElementById("NavBarInput").click()
+            }}
+            className="contents__item home"
+          >
             <a href="#LandingSection">Home</a>
           </div>
-          <div className="contents__item about">
+          <div
+            onClick={() => {
+              document.getElementById("NavBarInput").click()
+            }}
+            className="contents__item about"
+          >
             <a href="#AboutSection">About</a>
           </div>
-          <div className="contents__item events">
+          <div
+            onClick={() => {
+              document.getElementById("NavBarInput").click()
+            }}
+            className="contents__item events"
+          >
             <a href="#EventSection">Events</a>
           </div>
-          <div className="contents__item speakers">
+          <div
+            onClick={() => {
+              document.getElementById("NavBarInput").click()
+            }}
+            className="contents__item speakers"
+          >
             <a href="#SpeakerSection">Speakers</a>
           </div>
-          <div className="contents__item team">
+          <div
+            onClick={() => {
+              document.getElementById("NavBarInput").click()
+            }}
+            className="contents__item team"
+          >
             <a href="#SpeakerSection">Team</a>
           </div>
-          <div className="contents__item contact">
+          <div
+            onClick={() => {
+              document.getElementById("NavBarInput").click()
+            }}
+            className="contents__item contact"
+          >
             <a href="#FooterSection">Reach Us</a>
           </div>
         </div>
