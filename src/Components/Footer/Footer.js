@@ -7,7 +7,7 @@ import {
   GrTwitter,
 } from "react-icons/gr";
 
-import { BsMic } from "react-icons/bs";
+// import { BsMic } from "react-icons/bs";
 function Footer() {
   return (
     <section id="FooterSection" className="FooterSection">

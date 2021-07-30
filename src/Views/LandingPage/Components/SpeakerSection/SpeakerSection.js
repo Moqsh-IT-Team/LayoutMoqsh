@@ -6,7 +6,7 @@ import img2 from "../../../../Assets/Temp/speaker2.png";
 import img3 from "../../../../Assets/Temp/speaker3.png";
 
 import SpeakerCards from "./Components/SpeakerCards/SpeakerCards";
-import Accordion from "../../../../Components/Accordion/Accordion";
+// import Accordion from "../../../../Components/Accordion/Accordion";
 
 function SpeakerSection() {
   return (
