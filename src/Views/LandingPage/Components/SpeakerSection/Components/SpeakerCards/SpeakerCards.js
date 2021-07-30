@@ -1,11 +1,10 @@
 import "./SpeakerCards.scss";
 import Modal from "../../../../../../Components/Modal/Modal";
 
-function SpeakerCards({ src, date, Name, desc, isActive, id, ...props }) {
+function SpeakerCards({ src, Name, desc, isActive, id, ...props }) {
   return (
     <>
       <div className={`SpeakerCard`}>
-        <div className="SpeakerCard__Date">{date}</div>
         <div className="SpeakerCard__content">
           <img
             className="SpeakerCard__Image"
@@ -21,11 +20,11 @@ function SpeakerCards({ src, date, Name, desc, isActive, id, ...props }) {
           </div>
         </div>
         <button
-          onClick={() => {
-            document.querySelector(`.Modal${id}`).style.display = "block";
-            document.getElementById("root").style.overflow = "hidden";
-            document.querySelector("html").style.overflow = "hidden";
-          }}
+          // onClick={() => {
+          //   document.querySelector(`.Modal${id}`).style.display = "block";
+          //   document.getElementById("root").style.overflow = "hidden";
+          //   document.querySelector("html").style.overflow = "hidden";
+          // }}
           className="SpeakerCard__ViewMore"
         >
           View More

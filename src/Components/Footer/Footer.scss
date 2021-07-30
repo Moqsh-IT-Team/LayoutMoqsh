@@ -29,7 +29,7 @@
     column-gap: 7px;
   }
   &__Left {
-    width: 75%;
+    width: 88%;
     height: 100%;
     row-gap: 20px;
     @include make-flex($just: space-between);
@@ -40,55 +40,19 @@
       font-weight: 600;
       font-size: 1.7rem;
     }
-    .Description {
-      line-height: 27px;
-      font-size: 1.1rem;
-    }
-    .QuickLinks {
-      @include make-flex($dir: row, $just: flex-start);
-      width: 100%;
-      column-gap: 20px;
-      row-gap: 20px;
-      flex-wrap: wrap;
+  }
 
-      &__Home,
-      &__Event,
-      &__Sponsor,
-      &__Speaker {
-        height: 45px;
-        cursor: pointer;
-        width: 156px;
-        padding: 0 20px;
-        column-gap: 20px;
-        @include make-flex($dir: row);
-        border: 2px solid white;
-        border-radius: 10px;
-        span {
-          font-weight: 600;
-          @include make-flex($dir: row);
-          width: auto;
-        }
-        svg {
-          width: auto;
-          height: 50%;
-        }
-        &:hover {
-          transition: 0.5s;
-          border: 2px solid #000;
-          background-color: white;
-          span {
-            color: #000;
-          }
-          svg {
-            fill: #000;
-          }
-        }
-      }
+  &__contactDetails {
+    &--pnone {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    &--email {
     }
   }
 
   &__Right {
-    width: 25%;
+    width: 12%;
   }
 }
 
