@@ -42,8 +42,8 @@ function SpeakerSection() {
             style={{ height: "110px", width: "110px" }}
           />
         </div>
-        <Accordion heading="View More">
-          {/* Add last 2 card in preview to accordion as well so it can be in accordion as it dissapears from preview */}
+        {/* <Accordion heading="View More">
+          Add last 2 card in preview to accordion as well so it can be in accordion as it dissapears from preview
           <SpeakerCards
             id="4"
             Name="Rajesh Nair"
@@ -99,7 +99,7 @@ function SpeakerSection() {
             isActive=""
             style={{ height: "110px", width: "110px" }}
           />
-        </Accordion>
+        </Accordion> */}
       </div>
       {/* <button className="SpeakerSection__ViewMore">View More</button> */}
     </section>
