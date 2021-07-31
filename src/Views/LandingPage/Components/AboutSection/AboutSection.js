@@ -1,21 +1,23 @@
 import SectionHeader from "../../../../Components/SectionHeading/SectionHeading";
 import "./AboutSection.scss";
 
-import { useEffect, useCallback } from "react";
+import { useEffect, useCallback, useState } from "react";
 import { useEmblaCarousel } from "embla-carousel/react";
 import ClubCard from "./Components/ClubCards/ClubCard";
 import { useRecursiveTimeout } from "../../../../hooks/useRecursiveTimeout";
 
 // Temp
-import media1 from "../../../../Assets/Temp/Sponsor1.png";
-import media2 from "../../../../Assets/Temp/Sponsor2.png";
-import media3 from "../../../../Assets/Temp/Sponsor3.png";
-import media4 from "../../../../Assets/Temp/Sponsor1.png";
-import media5 from "../../../../Assets/Temp/Sponsor2.png";
-function AboutSection() {
-  const AUTOPLAY_INTERVAL = 3000;
-  const [ClubsRef, ClubemblaApi] = useEmblaCarousel({ loop: true });
+import club1 from "../../../../Assets/Images/ClubLogo1.jpeg";
+import club2 from "../../../../Assets/Images/ClubLogo2.jpeg";
+import club3 from "../../../../Assets/Images/ClubLogo3.jpeg";
+import club4 from "../../../../Assets/Images/ClubLogo4.jpeg";
+import club5 from "../../../../Assets/Images/ClubLogo5.jpg";
+import club6 from "../../../../Assets/Images/ClubLogo6.jpg";
 
+function AboutSection() {
+  const AUTOPLAY_INTERVAL = 2500;
+  // const [AUTOPLAY_INTERVAL, setAUTOPLAY_INTERVAL] = useState(3000);
+  const [ClubsRef, ClubemblaApi] = useEmblaCarousel({ loop: true });
 
   const autoplay = useCallback(() => {
     if (!ClubemblaApi) return;
@@ -26,7 +28,7 @@ function AboutSection() {
     }
   }, [ClubemblaApi]);
 
-  const { play } = useRecursiveTimeout(autoplay, AUTOPLAY_INTERVAL);
+  const { play,stop } = useRecursiveTimeout(autoplay, AUTOPLAY_INTERVAL);
   useEffect(() => {
     play();
   }, [play]);
@@ -53,15 +55,21 @@ function AboutSection() {
         </p>
 
         <div className="AboutSection__Clubs" ref={ClubsRef}>
-          <div className="AboutSection__container">
-            <ClubCard className="AboutSection__slide" src={media1} />
-            <ClubCard className="AboutSection__slide" src={media2} />
-            <ClubCard className="AboutSection__slide" src={media3} />
-            <ClubCard className="AboutSection__slide" src={media4} />
-            <ClubCard className="AboutSection__slide" src={media5} />
-            <ClubCard className="AboutSection__slide" src={media1} />
-            <ClubCard className="AboutSection__slide" src={media2} />
-            <ClubCard className="AboutSection__slide" src={media3} />
+          <div
+            className="AboutSection__container"
+            onMouseLeave={() => {
+              play()
+            }}
+            onMouseEnter={() => {
+              stop()
+            }}
+          >
+            <ClubCard className="AboutSection__slide" src={club1} />
+            <ClubCard className="AboutSection__slide" src={club2} />
+            <ClubCard className="AboutSection__slide" src={club3} />
+            <ClubCard className="AboutSection__slide" src={club4} />
+            <ClubCard className="AboutSection__slide" src={club5} />
+            <ClubCard className="AboutSection__slide" src={club6} />
           </div>
         </div>
       </div>
