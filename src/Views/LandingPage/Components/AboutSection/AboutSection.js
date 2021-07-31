@@ -1,7 +1,7 @@
 import SectionHeader from "../../../../Components/SectionHeading/SectionHeading";
 import "./AboutSection.scss";
 
-import { useEffect, useCallback, useState } from "react";
+import { useEffect, useCallback } from "react";
 import { useEmblaCarousel } from "embla-carousel/react";
 import ClubCard from "./Components/ClubCards/ClubCard";
 import { useRecursiveTimeout } from "../../../../hooks/useRecursiveTimeout";
@@ -16,7 +16,6 @@ import club6 from "../../../../Assets/Images/ClubLogo6.jpg";
 
 function AboutSection() {
   const AUTOPLAY_INTERVAL = 2500;
-  // const [AUTOPLAY_INTERVAL, setAUTOPLAY_INTERVAL] = useState(3000);
   const [ClubsRef, ClubemblaApi] = useEmblaCarousel({ loop: true });
 
   const autoplay = useCallback(() => {
