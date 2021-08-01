@@ -36,7 +36,7 @@ function AboutSection() {
     <section id="AboutSection" className="AboutSection">
       <SectionHeader text="About us" />
       <div className="AboutSection__Text">
-        <h1>MOQSH... The Change Starts With Us</h1>
+        <h1>MOQSH... Redefining the Impossible</h1>
         <p className="AboutSection__Text__Subtext">
           MOQSH, the place where ideas have a home, is a business fest put
           together by the School of Management and Entrepreneurship, SNU to give
@@ -47,10 +47,9 @@ function AboutSection() {
           panel, with eminent speakers from different fields to share their
           thoughts that tingle your antennas of curiosity. In all, we are one
           family that learns and grows together, with exciting events,
-          competitions and interactions to remember for a lifetime. MOQSH, the
-          annual management fest of Shiv Nadar University is back with an
-          exciting theme “Building Possibilities From Limitation” for this year
-          along with a series of events that will blow your mind!
+          competitions and interactions to remember for a lifetime. MOQSH is back this year with an exciting theme "Grow Against All the Odds",along with a series
+          of events that will blow your mind !!
+
         </p>
 
         <div className="AboutSection__Clubs" ref={ClubsRef}>

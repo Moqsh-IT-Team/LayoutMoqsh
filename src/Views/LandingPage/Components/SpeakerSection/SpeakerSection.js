@@ -1,9 +1,9 @@
 import SectionHeader from "../../../../Components/SectionHeading/SectionHeading";
 import "./SpeakerSection.scss";
 
-import img1 from "../../../../Assets/Temp/speaker1.png";
-import img2 from "../../../../Assets/Temp/speaker2.png";
-import img3 from "../../../../Assets/Temp/speaker3.png";
+import img1 from "../../../../Assets/Speakers/Roshni_Nadar.jpg";
+import img2 from "../../../../Assets/Speakers/Bianca_Ghose.jpg";
+import img3 from "../../../../Assets/Speakers/Apurva_Chamaria.jpg";
 
 import SpeakerCards from "./Components/SpeakerCards/SpeakerCards";
 // import Accordion from "../../../../Components/Accordion/Accordion";
@@ -16,8 +16,10 @@ function SpeakerSection() {
         <div className="SpeakerSection__preview">
           <SpeakerCards
             id="1"
-            Name="Gaurav Sangtani"
-            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, blanditiis nulla harum facilis ea voluptate expedita provident id odio vitae!"
+            Name="Roshni Nadar Malhotra"
+            desc="Indian businesswoman,Chairperson of HCL
+            Technologies and First woman to lead a listed IT company in India.In 2020, she
+            was ranked 55th on the Forbes World&#39;s 100 Most Powerful Women."
             src={img1}
             date="19th Dec."
             isActive=""
@@ -25,8 +27,10 @@ function SpeakerSection() {
           />
           <SpeakerCards
             id="2"
-            Name="Rajesh Nair"
-            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, blanditiis nulla harum facilis ea voluptate expedita provident id odio vitae!"
+            Name="Bianca Ghose"
+            desc="First Chief Storyteller for global technology firm, Wipro. She works with
+            marketing and communications teams to improve brand permissions across 35
+            countries."
             src={img2}
             date="19th Dec."
             isActive=""
@@ -34,8 +38,10 @@ function SpeakerSection() {
           />
           <SpeakerCards
             id="3"
-            Name="Gurnoor Kaur Behl"
-            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, blanditiis nulla harum facilis ea voluptate expedita provident id odio vitae!"
+            Name="Apurva Chamaria"
+            desc="SVP at Tech Mahindra, a 5.3 Bn US$ global IT major. He is the
+            Chief of Staff to the CEO &amp; MD and leads grow initiatives around Cloud, AI and Wave
+            4 businesses."
             src={img3}
             date="19th Dec."
             isActive=""
@@ -100,8 +106,8 @@ function SpeakerSection() {
             style={{ height: "110px", width: "110px" }}
           />
         </Accordion> */}
+      <button  className="SpeakerSection__ViewMore"> View More </button>
       </div>
-      {/* <button className="SpeakerSection__ViewMore">View More</button> */}
     </section>
   );
 }
