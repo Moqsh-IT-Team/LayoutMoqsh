@@ -6,9 +6,9 @@ import React from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 // Temp
-import leftEvent from "../../../../Assets/Temp/EventLeft.png";
-import mainEvent from "../../../../Assets/Temp/Event1.png";
-import rightEvent from "../../../../Assets/Temp/EventRight.png";
+import leftEvent from "../../../../Assets/Events/Crackthedeal.png";
+import mainEvent from "../../../../Assets/Events/Bullandbear.jpg";
+import rightEvent from "../../../../Assets/Events/merkit.png";
 import SectionHeader from "../../../../Components/SectionHeading/SectionHeading";
 
 function EventSection() {
@@ -41,32 +41,32 @@ function EventSection() {
           <div className="embla__container">
             <Card
               className="embla__slide"
-              title="CONSULTAR"
+              //title="CONSULTAR"
               ImgSrc={mainEvent}
             />
             <Card
               className="embla__slide selected"
-              title="CONSULTAR"
+              //title="CONSULTAR"
               ImgSrc={leftEvent}
             />
             <Card
               className="embla__slide"
-              title="CONSULTAR"
+              //title="CONSULTAR"
               ImgSrc={rightEvent}
             />
             <Card
               className="embla__slide"
-              title="CONSULTAR"
+              //title="CONSULTAR"
               ImgSrc={rightEvent}
             />
             <Card
               className="embla__slide"
-              title="CONSULTAR"
+              //title="CONSULTAR"
               ImgSrc={rightEvent}
             />
             <Card
               className="embla__slide"
-              title="CONSULTAR"
+              //title="CONSULTAR"
               ImgSrc={rightEvent}
             />
           </div>

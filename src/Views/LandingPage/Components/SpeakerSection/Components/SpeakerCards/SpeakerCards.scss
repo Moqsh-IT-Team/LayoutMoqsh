@@ -1,7 +1,7 @@
 @import "../../../../../../styles/mixins";
 
 .SpeakerCard {
-  height: 460px;
+  height: 370px;
   row-gap: 20px;
   width: 330px;
   max-width: 330px;
@@ -32,13 +32,13 @@
   }
 
   &__Name {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 600;
     font-family: "Merienda", cursive;
     text-align: center;
   }
   &__SmallDesc {
-    font-size: 1rem;
+    font-size: 0.9rem;
     p {
       max-height: 133px;
       text-overflow: ellipsis;
@@ -49,7 +49,7 @@
   &__content {
     height: 100%;
     width: 100%;
-    row-gap: 40px;
+    row-gap: 20px;
     @include make-flex();
   }
   &__Image {

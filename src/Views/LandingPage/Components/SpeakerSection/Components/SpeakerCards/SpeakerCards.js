@@ -19,7 +19,7 @@ function SpeakerCards({ src, Name, desc, isActive, id, ...props }) {
             </div>
           </div>
         </div>
-        <button
+        { /*<button
           // onClick={() => {
           //   document.querySelector(`.Modal${id}`).style.display = "block";
           //   document.getElementById("root").style.overflow = "hidden";
@@ -28,7 +28,7 @@ function SpeakerCards({ src, Name, desc, isActive, id, ...props }) {
           className="SpeakerCard__ViewMore"
         >
           View More
-        </button>
+        </button>*/}
       </div>
       <Modal id={id} name={Name} src={src} desc={desc} />
     </>
