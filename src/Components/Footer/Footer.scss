@@ -51,7 +51,7 @@
       width: 150px;
       bottom: 140%;
       left: 50%;
-      margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+      margin-left: -60px;
     }
     .tooltip:hover .tooltiptext {
       visibility: visible;
