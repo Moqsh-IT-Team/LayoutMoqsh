@@ -4,9 +4,9 @@
   // height: 45vh;
   width: 100%;
   background-color: #423d79;
-  @include make-flex($dir: row);
+  @include make-flex($dir: row, $just: space-between);
   position: relative;
-  padding: 35px 70px;
+  padding: 0px 70px;
 
   &__Description,
   &__QuickLinks,
@@ -20,6 +20,10 @@
       height: 25px;
       fill: #c0e1ff;
       cursor: pointer;
+      path {
+        fill: #c0e1ff;
+        stroke: #c0e1ff;
+      }
       &:hover {
         transform: scale(1.2);
         fill: #84bdf3;
@@ -27,6 +31,11 @@
     }
     @include make-flex($dir: row, $just: flex-start);
     column-gap: 7px;
+
+    &--call,
+    &--mail {
+      width: auto;
+    }
   }
   &__Left {
     width: 88%;
@@ -44,15 +53,22 @@
 
   &__contactDetails {
     &--pnone {
-      margin-top: 10px;
-      margin-bottom: 10px;
+      width: auto;
+      // margin-top: 10px;
+      // margin-bottom: 10px;
     }
     &--email {
+      width: auto;
     }
   }
 
   &__Right {
-    width: 12%;
+    width: auto;
+    padding: 15px 0;
+    img {
+      height: 75px;
+      width: auto;
+    }
   }
 }
 
@@ -61,8 +77,15 @@
     row-gap: 50px;
     padding: 35px 0px;
     flex-direction: column-reverse;
-    &__Right {
-      width: 50%;
+    &__Right img {
+      width: 115px;
+      height: 130px;
+    }
+    &__Icons {
+      justify-content: space-around;
+    }
+    &__Left {
+      width: auto;
     }
     .QuickLinks {
       justify-content: center;
