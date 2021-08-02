@@ -29,14 +29,46 @@ function Footer() {
             abc123@gmail.com
           </div> */}
           <div className="FooterSection__Icons">
-            <GrLinkedinOption />
-            <GrFacebookOption />
-            <GrInstagram />
-            <GrTwitter />
-            <a className="FooterSection__Icons--call" href="tel:1234567890">
+            <a
+              className="FooterSection__Icons--Linkedin"
+              href="https://www.linkedin.com/in/sme%20-moqsh-321226150/"
+            >
+              <GrLinkedinOption />
+            </a>
+            <a
+              className="FooterSection__Icons--Facebook"
+              href="http://www.facebook.com/SMEMOQSH/"
+            >
+              <GrFacebookOption />
+            </a>
+            <a
+              className="FooterSection__Icons--Instagram"
+              href="https://www.instagram.com/smemoqsh/"
+            >
+              <GrInstagram />
+            </a>
+            <a
+              className="FooterSection__Icons--Twitter"
+              href="https://twitter.com/smemoqsh?lang=en"
+            >
+              <GrTwitter />
+            </a>
+            <a
+              className="FooterSection__Icons--call tooltip"
+              href="tel:9793798823"
+            >
+              <span class="tooltiptext">
+                Pawan: <br />
+                9793798823
+              </span>
               <GrPhone />
             </a>
-            <a className="FooterSection__Icons--mail" href="mailto:abc123@gmail.com">
+            <a
+              className="FooterSection__Icons--mail tooltip"
+              href="mailto:pv635@snu.edu.in"
+            >
+              <span class="tooltiptext">Pawan: pv635@snu.edu.in</span>
+
               <GrMailOption />
             </a>
           </div>
