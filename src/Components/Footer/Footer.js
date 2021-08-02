@@ -30,30 +30,40 @@ function Footer() {
           </div> */}
           <div className="FooterSection__Icons">
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               className="FooterSection__Icons--Linkedin"
               href="https://www.linkedin.com/in/sme%20-moqsh-321226150/"
             >
               <GrLinkedinOption />
             </a>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               className="FooterSection__Icons--Facebook"
               href="http://www.facebook.com/SMEMOQSH/"
             >
               <GrFacebookOption />
             </a>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               className="FooterSection__Icons--Instagram"
               href="https://www.instagram.com/smemoqsh/"
             >
               <GrInstagram />
             </a>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               className="FooterSection__Icons--Twitter"
               href="https://twitter.com/smemoqsh?lang=en"
             >
               <GrTwitter />
             </a>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               className="FooterSection__Icons--call tooltip"
               href="tel:9793798823"
             >
@@ -64,6 +74,8 @@ function Footer() {
               <GrPhone />
             </a>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               className="FooterSection__Icons--mail tooltip"
               href="mailto:pv635@snu.edu.in"
             >
