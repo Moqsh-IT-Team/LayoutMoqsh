@@ -6,7 +6,9 @@ function Header() {
   return (
     <div className="HeaderContainer">
       <div className="HeaderContainer__Header">
-        <img className="Header__logo" alt="Logo" src={HeaderLogo} />
+        <a className="HeaderContainer__redirect" href="#LandingSection">
+          <img className="Header__logo" alt="Logo" src={HeaderLogo} />
+        </a>
 
         <input
           type="checkbox"
@@ -44,7 +46,7 @@ function Header() {
         <div className="Header__contents">
           <div
             onClick={() => {
-              document.getElementById("NavBarInput").click()
+              document.getElementById("NavBarInput").click();
             }}
             className="contents__item home"
           >
@@ -52,7 +54,7 @@ function Header() {
           </div>
           <div
             onClick={() => {
-              document.getElementById("NavBarInput").click()
+              document.getElementById("NavBarInput").click();
             }}
             className="contents__item about"
           >
@@ -60,7 +62,7 @@ function Header() {
           </div>
           <div
             onClick={() => {
-              document.getElementById("NavBarInput").click()
+              document.getElementById("NavBarInput").click();
             }}
             className="contents__item events"
           >
@@ -68,7 +70,7 @@ function Header() {
           </div>
           <div
             onClick={() => {
-              document.getElementById("NavBarInput").click()
+              document.getElementById("NavBarInput").click();
             }}
             className="contents__item speakers"
           >
@@ -76,7 +78,7 @@ function Header() {
           </div>
           <div
             onClick={() => {
-              document.getElementById("NavBarInput").click()
+              document.getElementById("NavBarInput").click();
             }}
             className="contents__item team"
           >
@@ -84,7 +86,7 @@ function Header() {
           </div>
           <div
             onClick={() => {
-              document.getElementById("NavBarInput").click()
+              document.getElementById("NavBarInput").click();
             }}
             className="contents__item contact"
           >
