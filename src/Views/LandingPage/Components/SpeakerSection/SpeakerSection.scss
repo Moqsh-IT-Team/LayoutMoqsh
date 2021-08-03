@@ -1,7 +1,7 @@
 @import "../../../../styles/mixins";
 
 .SpeakerSection {
-  min-height: 100vh;
+  height: auto;
   width: 100%;
   row-gap: 50px;
   padding-top: 2rem;
@@ -23,6 +23,7 @@
     flex-wrap: wrap;
   }
   &__ViewMore {
+    margin-bottom: 20px;
     width: 250px;
     border-radius: 10px;
     border: none;

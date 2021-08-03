@@ -1,83 +1,65 @@
 @import "../../../../styles/mixins";
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;1,500&display=swap");
+
+h1,
+h2 {
+  font-family: "Raleway";
+  width: auto;
+}
+.moqsh-logo {
+  height: 200px;
+  width: 200px;
+}
 
 .LandingSection {
+  width: 100vw;
   height: 100vh;
-  width: 100%;
-  // scroll-snap-align: start;
-  position: relative;
-  background-image: url("../../../../Assets/Images/BackGround.png");
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../../../../Assets/Images/unnamed.jpeg);
   background-size: cover;
-  background-color: #c0e1ff;
-  @include make-flex();
-}
-.LandingPageBody {
-  // padding-top: 10em;
-  @include make-flex(row, center, center);
-  width: 70%;
-  justify-content: space-between;
-
-  &__img {
-    width: auto;
-    img {
-      height: 50vh;
-      width: auto;
-      mix-blend-mode: darken;
-      filter: drop-shadow(0 0 1rem black);
-    }
-  }
-  &__text {
-    width: auto;
-    font-size: 2.5vw;
-    display: inline;
-    font-family: "Raleway";
-    text-transform: uppercase;
-    row-gap: 11px;
-    h1 {
-      font-weight: 800;
-      filter: drop-shadow(0 0 0.2rem black);
-    }
-    &__H1A,
-    &__H1B {
-      width: auto;
-      opacity: 0.75;
-    }
-    &__H1A {
-      color: #0c33ff;
-    }
-    &__img {
-      mix-blend-mode: darken;
-      img {
-        width: 8em;
-      }
-    }
-  }
 }
 
-@media only screen and (max-width: 620px) {
-  .LandingPageBody {
-    @include make-flex();
-    width: 100%;
-    &__img {
-      img {
-        width: auto;
-      }
-    }
-    &__text {
-      font-size: unset;
-      @include make-flex();
-      h1 {
-        white-space: nowrap;
-        font-size: 2.5rem;
-      }
-      &__img {
-        @include make-flex();
-        img {
-          width: 16em;
-        }
-      }
-    }
-  }
+.row-1 {
+  width: auto;
+  font-weight: 700;
+
+  margin-top: 100px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.row-2 {
+  margin-top: 10px;
+  color: #43d2ff;
+  font-weight: 600;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row-2 h2 {
+  margin-top: 10px;
+  font-style: italic;
+  color: white;
+}
+.row-2 h1 {
+  filter: drop-shadow(0 0 1rem black);
+}
+
+.row-3 h1 {
+  width: 50%;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
