@@ -1,25 +1,27 @@
 import "./LandingSection.scss";
-import logo from "../../../../Assets/Images/logo.jpg";
-import moqsh from "../../../../Assets/Images/Moqsh3.jpeg";
 import CountdownSection from "./CountdownSection/Countdown";
+import moqsh from "../../../../Assets/Images/logo.jpg";
 
 function LandingSection() {
   return (
-    <section id="LandingSection" className="LandingSection">
-      <div className="LandingPageBody">
-        <div className="LandingPageBody__img">
-          <img src={logo} alt="" />
-        </div>
-
-        <div className="LandingPageBody__text">
-          <div className="LandingPageBody__text__img">
-            <img src={moqsh} alt="" />
-          </div>
-          <h1 className="LandingPageBody__text__H1A">The Change </h1>
-          <h1 className="LandingPageBody__text__H1B">Starts With Us</h1>
-        </div>
+    <section id="LandingSection " className="LandingSection">
+      <div className="row-1 flex">
+        <img className="moqsh-logo" src={moqsh} alt="Moqsh Logo" />
+        <h1>MOQSH</h1>
       </div>
-      <CountdownSection />
+      <div className="row-2 ">
+        <h1>THE ANNUAL MANAGMENT FEST OF SNU</h1>
+        <h2>
+          Redefining <span>the future </span>
+        </h2>
+      </div>
+
+      <div className="row-3 flex" aria-hidden>
+        <h1>
+          EXCITING EVENTS AND CONTESTS WITH PRIZE POOL WORTH $2000 COMING SOON
+        </h1>
+        <CountdownSection />
+      </div>
     </section>
   );
 }

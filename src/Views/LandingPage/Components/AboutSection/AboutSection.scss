@@ -2,7 +2,6 @@
 
 .AboutSection {
   background-color: #ffffff;
-  height: 100vh;
   width: 100%;
   // scroll-snap-align: start;
   @include make-flex();
@@ -28,6 +27,7 @@
   }
   p {
     color: black;
+    margin-top: 30px;
   }
   h1 {
     @media only screen and (max-width: 620px) {
