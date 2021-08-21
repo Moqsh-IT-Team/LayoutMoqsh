@@ -8,7 +8,7 @@
   width: 100%;
   @include make-flex($just: flex-start);
 
-  &__redirect{
+  &__redirect {
     width: 50px;
     height: 56px;
   }
@@ -27,7 +27,6 @@
     }
 
     .Header {
-     
       &__logo {
         height: 65px;
         width: 50px;
@@ -55,7 +54,15 @@
 
 @media only screen and (max-width: 620px) {
   .HeaderContainer {
+    width: 100vw;
+    // margin-top: 75px;
+    // transform: translateY(75px);
     &__Header {
+      // box-shadow: unset;
+      // margin-top: -75px;
+      // transform: translateY(-75px);
+      background-color: #000000;
+
       .hamButton {
         z-index: 1;
         position: relative;
@@ -68,7 +75,8 @@
             display: block;
             width: 25px;
             height: 10px;
-            border-top: 2px solid #eee;
+            // mix-blend-mode: difference;
+            border-top: 5px solid #eee;
             transform-origin: 4px 0px;
             transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
             &:first-child {
@@ -82,6 +90,9 @@
       }
 
       .Header {
+        &__logo {
+          // visibility: hidden;
+        }
         &__ShowNav {
           transform: translateY(0) !important;
         }

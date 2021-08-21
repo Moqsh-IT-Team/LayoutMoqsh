@@ -27,7 +27,7 @@ function AboutSection() {
     }
   }, [ClubemblaApi]);
 
-  const { play,stop } = useRecursiveTimeout(autoplay, AUTOPLAY_INTERVAL);
+  const { play, stop } = useRecursiveTimeout(autoplay, AUTOPLAY_INTERVAL);
   useEffect(() => {
     play();
   }, [play]);
@@ -47,19 +47,19 @@ function AboutSection() {
           panel, with eminent speakers from different fields to share their
           thoughts that tingle your antennas of curiosity. In all, we are one
           family that learns and grows together, with exciting events,
-          competitions and interactions to remember for a lifetime. MOQSH is back this year with an exciting theme "Grow Against All the Odds",along with a series
-          of events that will blow your mind !!
-
+          competitions and interactions to remember for a lifetime. MOQSH is
+          back this year with an exciting theme "Grow Against All the
+          Odds",along with a series of events that will blow your mind !!
         </p>
 
         <div className="AboutSection__Clubs" ref={ClubsRef}>
           <div
             className="AboutSection__container"
             onMouseLeave={() => {
-              play()
+              play();
             }}
             onMouseEnter={() => {
-              stop()
+              stop();
             }}
           >
             <ClubCard className="AboutSection__slide" src={club1} />
@@ -71,10 +71,6 @@ function AboutSection() {
           </div>
         </div>
       </div>
-
-      {/* <button className="AboutSection__ViewMore">
-        Learn more about Moqsh and Shiv Nadar University
-      </button> */}
     </section>
   );
 }

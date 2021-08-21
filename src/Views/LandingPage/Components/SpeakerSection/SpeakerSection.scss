@@ -1,7 +1,8 @@
 @import "../../../../styles/mixins";
 
 .SpeakerSection {
-  height: auto;
+  height: 100vh;
+  min-height: 755px;
   width: 100%;
   row-gap: 50px;
   padding-top: 2rem;
@@ -33,6 +34,11 @@
     font-size: 1.1rem;
     cursor: pointer;
     height: 50px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .SpeakerSection {
+    width: 100vw;
   }
 }
 
