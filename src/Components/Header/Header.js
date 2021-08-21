@@ -14,11 +14,11 @@ function Header() {
           type="checkbox"
           id="NavBarInput"
           onChange={() => {
-            if (document.getElementById("root").style.overflow === "hidden") {
-              document.getElementById("root").style.overflow = "unset";
-            } else {
-              document.getElementById("root").style.overflow = "hidden";
-            }
+            // if (document.getElementById("root").style.overflow === "hidden") {
+            //   document.getElementById("root").style.overflow = "unset";
+            // } else {
+            //   document.getElementById("root").style.overflow = "hidden";
+            // }
 
             if (
               document

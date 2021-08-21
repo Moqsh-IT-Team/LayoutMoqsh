@@ -3,6 +3,8 @@
 .AboutSection {
   background-color: #ffffff;
   width: 100%;
+  min-height: 100vh;
+  min-height: 755px;
   // scroll-snap-align: start;
   @include make-flex();
   &__Text {
@@ -83,6 +85,8 @@
 
 @media only screen and (max-width: 620px) {
   .AboutSection {
+    min-height: unset;
+    width: 100vw;
     padding: 2rem 0;
     height: auto;
     &__Text {

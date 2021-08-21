@@ -1,23 +1,19 @@
 @import "../../styles/mixins";
 
 .FooterSection {
-  // height: 45vh;
-  width: 100%;
-  background-color: #423d79;
-  @include make-flex($dir: row, $just: space-between);
-  position: relative;
-  padding: 0px 70px;
-
-  &__Description,
-  &__QuickLinks,
-  &__Connect {
-    @include make-flex();
-    row-gap: 7px;
-  }
-  &__Icons {
+  &__Bottom {
+    width: 100%;
+    background-color: #272a2b;
+    height: 52.8px;
+    @include make-flex($dir: row);
+    position: relative;
+    padding: 18px 0;
+    column-gap: 20px;
+    background-image: url("../../Assets/Images/footerBg.png");
+    background-repeat: repeat-x;
     svg {
       width: auto;
-      height: 25px;
+      height: 23px;
       fill: #c0e1ff;
       cursor: pointer;
       path {
@@ -29,64 +25,72 @@
         fill: #84bdf3;
       }
     }
-    @include make-flex($dir: row, $just: flex-start);
-    column-gap: 7px;
+  }
+  &__Top {
+    height: 200px;
+    width: 100%;
+    background-color: #161819;
+    column-gap: 120px;
+    @include make-flex($dir: row);
 
-    a {
+    img {
+      height: 130px;
       width: auto;
     }
-    .tooltip {
-      position: relative;
-      display: inline-block;
+    &__empty {
+      width: 200px;
     }
-    .tooltip .tooltiptext {
-      visibility: hidden;
-      background-color: black;
-      color: #fff;
-      text-align: center;
-      padding: 5px 0;
-      border-radius: 6px;
-      position: absolute;
-      z-index: 1;
-      width: 150px;
-      bottom: 140%;
-      left: 50%;
-      margin-left: -60px;
-    }
-    .tooltip:hover .tooltiptext {
-      visibility: visible;
+    &__Contact {
+      width: 200px;
+      font-family: "PT Serif", serif;
+      @include make-flex();
+
+      &--heading {
+        color: #52595e;
+        text-shadow: 0 1px 2px black;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+      }
+      &--text {
+        color: #b2b9be;
+        font-size: 17px;
+      }
+      &--text.first {
+        margin-bottom: 1.33em;
+      }
     }
   }
-  &__Left {
-    width: 88%;
-    height: 100%;
-    row-gap: 20px;
-    @include make-flex($just: space-between);
-    color: white;
-    font-family: "Raleway";
 
-    .Heading {
-      font-weight: 600;
-      font-size: 1.7rem;
-    }
+  a {
+    width: auto;
+  }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    width: 150px;
+    bottom: 140%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
   }
 
   &__contactDetails {
     &--pnone {
       width: auto;
-      // margin-top: 10px;
-      // margin-bottom: 10px;
     }
     &--email {
-      width: auto;
-    }
-  }
-
-  &__Right {
-    width: auto;
-    padding: 15px 0;
-    img {
-      height: 75px;
       width: auto;
     }
   }
@@ -94,21 +98,33 @@
 
 @media only screen and (max-width: 620px) {
   .FooterSection {
+    width: 100vw;
+
     row-gap: 50px;
-    padding: 35px 0px;
-    flex-direction: column-reverse;
-    &__Right img {
-      width: 115px;
-      height: 130px;
+    &__Top {
+      column-gap: 20px;
+      height: 230px;
+      img {
+        height: 130px;
+        width: auto;
+      }
+      &__empty {
+        width: 0px;
+        visibility: hidden;
+      }
+      &__Contact {
+        &--heading,
+        &--text {
+          font-size: 20px;
+        }
+      }
     }
-    &__Icons {
-      justify-content: space-around;
-    }
-    &__Left {
-      width: auto;
-    }
-    .QuickLinks {
-      justify-content: center;
+    &__Bottom {
+      column-gap: 30px;
+      svg {
+        width: auto;
+        height: 27px;
+      }
     }
   }
 }

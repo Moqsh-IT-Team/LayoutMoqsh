@@ -12,82 +12,76 @@ import {
 function Footer() {
   return (
     <section id="FooterSection" className="FooterSection">
-      <div className="FooterSection__Left">
-        {/*         
-        // <div className="FooterSection__ContactUs">
-        //   <span className="Heading">Contact Us</span>
-        //   <div className="FooterSection__contactDetails--pnone">9794528793</div>
-        //   <div className="FooterSection__contactDetails--email">
-        //     abc123@gmail.com
-        //   </div>
-        // </div> */}
-
-        <div className="FooterSection__Connect">
-          <span className="Heading">Connect with us</span>{" "}
-          {/* <div className="FooterSection__contactDetails--pnone">9794528793</div>
-          <div className="FooterSection__contactDetails--email">
-            abc123@gmail.com
-          </div> */}
-          <div className="FooterSection__Icons">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="FooterSection__Icons--Linkedin"
-              href="https://www.linkedin.com/in/sme%20-moqsh-321226150/"
-            >
-              <GrLinkedinOption />
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="FooterSection__Icons--Facebook"
-              href="http://www.facebook.com/SMEMOQSH/"
-            >
-              <GrFacebookOption />
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="FooterSection__Icons--Instagram"
-              href="https://www.instagram.com/smemoqsh/"
-            >
-              <GrInstagram />
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="FooterSection__Icons--Twitter"
-              href="https://twitter.com/smemoqsh?lang=en"
-            >
-              <GrTwitter />
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="FooterSection__Icons--call tooltip"
-              href="tel:9793798823"
-            >
-              <span class="tooltiptext">
-                Pawan: <br />
-                9793798823
-              </span>
-              <GrPhone />
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="FooterSection__Icons--mail tooltip"
-              href="mailto:pv635@snu.edu.in"
-            >
-              <span class="tooltiptext">Pawan: pv635@snu.edu.in</span>
-
-              <GrMailOption />
-            </a>
-          </div>
+      <div className="FooterSection__Top">
+        <div className="FooterSection__Top__Contact">
+          <span className="FooterSection__Top__Contact--heading">Mail</span>
+          <span className="FooterSection__Top__Contact--text first">
+            Pawan Verma <br /> pv635@snu.edu.in
+          </span>
+          <span className="FooterSection__Top__Contact--heading">Phone</span>
+          <span className="FooterSection__Top__Contact--text">
+            Pawan Verma <br /> 9793798823
+          </span>
         </div>
-      </div>
-      <div className="FooterSection__Right">
+
         <img src={logo} alt="MoqshLogo" />
+        <div className="FooterSection__Top__empty"></div>
+      </div>
+      <div className="FooterSection__Bottom">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="FooterSection__Icons--Linkedin"
+          href="https://www.linkedin.com/in/sme%20-moqsh-321226150/"
+        >
+          <GrLinkedinOption />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="FooterSection__Icons--Facebook"
+          href="http://www.facebook.com/SMEMOQSH/"
+        >
+          <GrFacebookOption />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="FooterSection__Icons--Instagram"
+          href="https://www.instagram.com/smemoqsh/"
+        >
+          <GrInstagram />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="FooterSection__Icons--Twitter"
+          href="https://twitter.com/smemoqsh?lang=en"
+        >
+          <GrTwitter />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="FooterSection__Icons--call tooltip"
+          href="tel:9793798823"
+        >
+          <span className="tooltiptext">
+            Pawan: <br />
+            9793798823
+          </span>
+          <GrPhone />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="FooterSection__Icons--mail tooltip"
+          href="mailto:pv635@snu.edu.in"
+        >
+          <span className="tooltiptext">Pawan: pv635@snu.edu.in</span>
+
+          <GrMailOption />
+        </a>
       </div>
     </section>
   );

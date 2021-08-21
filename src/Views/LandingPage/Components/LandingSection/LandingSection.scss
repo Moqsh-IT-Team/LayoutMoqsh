@@ -9,32 +9,39 @@ h2 {
 }
 .moqsh-logo {
   height: 200px;
+  @include make-flex();
   width: 200px;
 }
 
 .LandingSection {
-  width: 100vw;
-  height: 100vh;
+  width: calc(100vw);
+  min-height: 100vh;
+  // min-height: 755px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  // row-gap: 50px;
   background-image: url(../../../../Assets/Images/unnamed.jpeg);
   background-size: cover;
+  // &::before{
+  //   content: "";
+  //   height: 150px;
+  // }
 }
 
 .row-1 {
   width: auto;
   font-weight: 700;
 
-  margin-top: 100px;
+  margin-top: 125px;
   color: white;
   font-size: 2.5rem;
   font-weight: bold;
 }
 
 .row-2 {
-  margin-top: 10px;
+  margin-bottom: 115px;
   color: #43d2ff;
   font-weight: 600;
   font-size: 2rem;
@@ -50,6 +57,10 @@ h2 {
 }
 .row-2 h1 {
   filter: drop-shadow(0 0 1rem black);
+  padding: 0 20px;
+}
+.row-3 {
+  margin-bottom: 35px;
 }
 
 .row-3 h1 {
@@ -62,4 +73,38 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 620px) {
+  .LandingSection {
+    height: calc(100vh - 75px);
+    margin-top: 75px;
+  }
+  .moqsh-logo {
+    height: 150px;
+    width: auto;
+  }
+  .row-1 {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .row-1 h1 {
+    font-size: 4.1rem;
+  }
+  h1,
+  h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .row-2 {
+    margin-bottom: 30px;
+  }
+  .row-3 {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .row-3 h1 {
+    width: auto;
+    font-size: 1.3rem;
+  }
 }

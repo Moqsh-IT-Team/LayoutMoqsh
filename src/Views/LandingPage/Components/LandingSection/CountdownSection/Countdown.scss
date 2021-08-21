@@ -1,7 +1,7 @@
 @import "../../../../../styles/mixins";
 
 .CountdownSection {
-  width: 50%;
+  width: calc(50% - 20px);
   @include make-flex($dir: row);
   row-gap: 5rem;
   padding: 10px;
