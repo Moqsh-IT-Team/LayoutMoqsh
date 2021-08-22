@@ -6,8 +6,6 @@ import Form from "../../Assets/Images/Form.png";
 
 function Header() {
   let location = useLocation();
-
-  console.log(location.pathname);
   return (
     <div className="HeaderContainer">
       <div className="HeaderContainer__Header">
