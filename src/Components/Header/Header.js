@@ -1,25 +1,22 @@
 import "./Header.scss";
 
 import HeaderLogo from "../../Assets/Images/HeaderLogo.png";
-// import moqsh from "../../Assets/Images/Moqsh3.jpeg";
+import { Link } from "react-router-dom";
+import Form from "../../Assets/Images/Form.png";
+
 function Header() {
   return (
     <div className="HeaderContainer">
       <div className="HeaderContainer__Header">
-        <a className="HeaderContainer__redirect" href="#LandingSection">
+        <a className="HeaderContainer__redirect" href="/">
           <img className="Header__logo" alt="Logo" src={HeaderLogo} />
+          <span>Moqsh</span>
         </a>
 
         <input
           type="checkbox"
           id="NavBarInput"
           onChange={() => {
-            // if (document.getElementById("root").style.overflow === "hidden") {
-            //   document.getElementById("root").style.overflow = "unset";
-            // } else {
-            //   document.getElementById("root").style.overflow = "hidden";
-            // }
-
             if (
               document
                 .querySelector(".Header__contents")
@@ -50,7 +47,7 @@ function Header() {
             }}
             className="contents__item home"
           >
-            <a href="#LandingSection">Home</a>
+            <a href="/#LandingSection">Home</a>
           </div>
           <div
             onClick={() => {
@@ -58,7 +55,7 @@ function Header() {
             }}
             className="contents__item about"
           >
-            <a href="#AboutSection">About</a>
+            <a href="/#AboutSection">About</a>
           </div>
           <div
             onClick={() => {
@@ -66,7 +63,7 @@ function Header() {
             }}
             className="contents__item events"
           >
-            <a href="#EventSection">Events</a>
+            <a href="/#EventSection">Events</a>
           </div>
           <div
             onClick={() => {
@@ -74,7 +71,7 @@ function Header() {
             }}
             className="contents__item speakers"
           >
-            <a href="#SpeakerSection">Speakers</a>
+            <a href="/#SpeakerSection">Speakers</a>
           </div>
           <div
             onClick={() => {
@@ -82,7 +79,8 @@ function Header() {
             }}
             className="contents__item team"
           >
-            <a href="#SpeakerSection">Team</a>
+            {/* <a href="/team">Team</a> */}
+            <Link to="/team">Team</Link>
           </div>
           <div
             onClick={() => {
@@ -90,9 +88,18 @@ function Header() {
             }}
             className="contents__item contact"
           >
-            <a href="#FooterSection">Reach Us</a>
+            <a href="/#FooterSection">Reach Us</a>
           </div>
         </div>
+
+        <a
+          href="https://forms.gle/34wydLJicE8UdWg99"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="Header__GoogleForm"
+        >
+          <img src={Form} alt="Google form" />
+        </a>
       </div>
     </div>
   );
