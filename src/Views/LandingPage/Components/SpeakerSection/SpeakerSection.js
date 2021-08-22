@@ -23,7 +23,6 @@ function SpeakerSection() {
             src={img1}
             date="19th Dec."
             isActive=""
-            style={{ height: "125px", width: "128px" }}
           />
           <SpeakerCards
             id="2"
@@ -34,7 +33,6 @@ function SpeakerSection() {
             src={img2}
             date="19th Dec."
             isActive=""
-            style={{ height: "125px", width: "128px" }}
           />
           <SpeakerCards
             id="3"
@@ -45,7 +43,6 @@ function SpeakerSection() {
             src={img3}
             date="19th Dec."
             isActive=""
-            style={{ height: "110px", width: "110px" }}
           />
         </div>
         {/* <Accordion heading="View More">
@@ -106,7 +103,7 @@ function SpeakerSection() {
             style={{ height: "110px", width: "110px" }}
           />
         </Accordion> */}
-      <button  className="SpeakerSection__ViewMore"> View More </button>
+        <button className="SpeakerSection__ViewMore"> View More </button>
       </div>
     </section>
   );

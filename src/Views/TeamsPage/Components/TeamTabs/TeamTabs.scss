@@ -1,0 +1,40 @@
+@import "../../../../styles/mixins";
+
+.TeamTabsWrapper {
+  @include make-flex($dir: row);
+  width: 100%;
+  //   min-height: 50px;
+  flex-wrap: wrap;
+  background-color: #304452;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+
+  &__TabItem {
+    @include make-flex();
+    cursor: pointer;
+
+    font-weight: bold;
+    text-align: center;
+    height: 50px;
+    width: auto;
+    padding: 15px 20px;
+    &:hover {
+      border-bottom: 5px solid #fff;
+      padding-bottom: 10px;
+      box-sizing: border-box;
+      color: #fff;
+      text-decoration: none;
+    }
+    &--selected {
+      font-weight: bold;
+      text-align: center;
+      height: 50px;
+      width: auto;
+      padding: 15px 20px;
+      border-bottom: 5px solid #84b1d0;
+      box-sizing: border-box;
+      color: #84b1d0;
+    }
+  }
+}
