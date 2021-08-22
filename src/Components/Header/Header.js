@@ -1,10 +1,11 @@
 import "./Header.scss";
 
 import HeaderLogo from "../../Assets/Images/HeaderLogo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Form from "../../Assets/Images/Form.png";
 
 function Header() {
+  let location = useLocation();
   return (
     <div className="HeaderContainer">
       <div className="HeaderContainer__Header">
@@ -92,14 +93,16 @@ function Header() {
           </div>
         </div>
 
-        <a
-          href="https://forms.gle/34wydLJicE8UdWg99"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="Header__GoogleForm"
-        >
-          <img src={Form} alt="Google form" />
-        </a>
+        {location.pathname === "/" && (
+          <a
+            href="https://forms.gle/34wydLJicE8UdWg99"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="Header__GoogleForm"
+          >
+            <img src={Form} alt="Google form" />
+          </a>
+        )}
       </div>
     </div>
   );
