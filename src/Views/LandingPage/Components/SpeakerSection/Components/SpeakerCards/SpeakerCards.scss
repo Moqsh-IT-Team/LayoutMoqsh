@@ -1,7 +1,7 @@
 @import "../../../../../../styles/mixins";
 
 .SpeakerCard {
-  height: 370px;
+  height: 420px;
   row-gap: 20px;
   width: 330px;
   max-width: 330px;
@@ -34,7 +34,7 @@
   &__Name {
     font-size: 1.3rem;
     font-weight: 600;
-    font-family: 'Manrope', sans-serif;
+    font-family: "Manrope", sans-serif;
     text-align: center;
   }
   &__SmallDesc {
@@ -53,8 +53,9 @@
     @include make-flex();
   }
   &__Image {
-    width: 100px;
-    border-radius: 50%;
+    width: auto;
+    height: 160px;
+    // border-radius: 50%;
   }
 
   &__Date {
