@@ -6,7 +6,8 @@ function Router() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" component={views.Home} />
+        <Route exact path="/" component={views.Home} />
+        <Route exact path="/team" component={views.TeamsPage} />
       </Switch>
     </BrowserRouter>
   );
