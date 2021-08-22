@@ -1,0 +1,18 @@
+@import "../../../../styles/mixins";
+
+.TeamHeaderWrapper {
+  height: 308px;
+  width: 100%;
+  margin-top: 75px;
+
+  //   border-bottom: 5px #304452 solid;
+  background: #6a8da6;
+  font-family: "Lato", sans-serif;
+
+  @include make-flex();
+  color: #fff;
+  font-size: 52px;
+  line-height: 1.13;
+  text-align: center;
+  font-weight: bold;
+}
