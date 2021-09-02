@@ -48,7 +48,7 @@ function Header() {
             }}
             className="contents__item home"
           >
-            <a href="/#LandingSection">Home</a>
+            <a href="/">Home</a>
           </div>
           <div
             onClick={() => {
