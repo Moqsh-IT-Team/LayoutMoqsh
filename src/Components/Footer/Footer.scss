@@ -106,7 +106,10 @@
     row-gap: 50px;
     &__Top {
       column-gap: 20px;
-      height: 230px;
+      height: 270px;
+
+      column-gap: 28px;
+      padding: 0 20px;
       img {
         height: 130px;
         width: auto;
