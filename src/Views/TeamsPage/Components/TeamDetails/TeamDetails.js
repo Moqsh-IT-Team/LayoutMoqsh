@@ -1,29 +1,29 @@
 import React from "react";
 import "./TeamDetails.scss";
-import Team from "../../Assets/Team.json";
+import Team from "../../Assets/NewTeams.json";
 import TeamMemberCard from "../TeamMemberCard/TeamMemberCard";
 
 function TeamDetails({ tab }) {
   let currentTeam = Team[tab];
+  console.log(tab);
   return (
     <div className="TeamDetailsWrapper">
       {Object.keys(currentTeam).length === 0 ? (
         <div className="placeholder">{tab} team comming soon.</div>
       ) : (
         <>
+        
           <TeamMemberCard
-            Name={currentTeam.Head.Name}
+            Name={currentTeam.Name}
+            isPresident={currentTeam.Name === "Pawan Verma"}
             isHead={true}
-            Instagram={currentTeam.Head.Instagram}
-            Twitter={currentTeam.Head.Twitter}
-            LinkedIn={currentTeam.Head.LinkedIn}
+            LinkedIn={currentTeam.LinkedIn}
           />
           {currentTeam.Members.map((member, index) => (
             <TeamMemberCard
               key={index}
               Name={member.Name}
               Instagram={member.Instagram}
-              Twitter={member.Twitter}
               LinkedIn={member.LinkedIn}
             />
           ))}

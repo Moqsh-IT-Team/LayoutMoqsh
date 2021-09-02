@@ -3,29 +3,42 @@ import "./TeamTabs.scss";
 import TeamDetails from "../TeamDetails/TeamDetails";
 
 function TeamTabs({ props }) {
-  const [activeTab, setActiveTab] = useState(12);
+  const [activeTab, setActiveTab] = useState(0);
 
-  const tabList = [
-    "Core",
-    "Marketing",
-    "HR",
-    "Design",
-    "Comm.",
-    "Sponsorship",
-    "Finance",
-    "Operations",
-    "Security",
-    "Overall",
-    "Out Reach",
-    "Speaker",
-    "IT",
-    "Cultural",
-  ];
+  // const tabList = [
+  //   "Core",
+  //   "Marketing",
+  //   "HR",
+  //   "Design",
+  //   "Comm.",
+  //   "Sponsorship",
+  //   "Finance",
+  //   "Operations",
+  //   "Security",
+  //   "Overall",
+  //   "Out Reach",
+  //   "Speaker",
+  //   "IT",
+  //   "Cultural",
+  // ];
 
+  const tabList = ["Core", "Club", "Moqsh 2021-22 Advisors"];
   return (
     <>
       <nav className="TeamTabsWrapper">
-        <div className={`TeamTabsWrapper__TabItem${activeTab===0 ?"--selected" :""}`} onClick={()=>setActiveTab(0)}>Core</div>
+        {tabList.map((tab, index) => (
+          <div
+            key={`${index}__${tab}`}
+            className={`TeamTabsWrapper__TabItem${
+              activeTab === index ? "--selected" : ""
+            }`}
+            onClick={() => setActiveTab(index)}
+          >
+            {tab}
+          </div>
+        ))}
+
+        {/* <div className={`TeamTabsWrapper__TabItem${activeTab===0 ?"--selected" :""}`} onClick={()=>setActiveTab(0)}>Core</div>
         <div className={`TeamTabsWrapper__TabItem${activeTab===1 ?"--selected" :""}`} onClick={()=>setActiveTab(1)}>Marketing</div>
         <div className={`TeamTabsWrapper__TabItem${activeTab===2 ?"--selected" :""}`} onClick={()=>setActiveTab(2)}>HR</div>
         <div className={`TeamTabsWrapper__TabItem${activeTab===3 ?"--selected" :""}`} onClick={()=>setActiveTab(3)}>Design</div>
@@ -38,7 +51,7 @@ function TeamTabs({ props }) {
         <div className={`TeamTabsWrapper__TabItem${activeTab===10 ?"--selected" :""}`} onClick={()=>setActiveTab(10)}>Out Reach</div>
         <div className={`TeamTabsWrapper__TabItem${activeTab===11 ?"--selected" :""}`} onClick={()=>setActiveTab(11)}>Speaker</div>
         <div className={`TeamTabsWrapper__TabItem${activeTab===12 ?"--selected" :""}`} onClick={()=>setActiveTab(12)}>IT</div>
-        <div className={`TeamTabsWrapper__TabItem${activeTab===13 ?"--selected" :""}`} onClick={()=>setActiveTab(13)}>Cultural</div>
+        <div className={`TeamTabsWrapper__TabItem${activeTab===13 ?"--selected" :""}`} onClick={()=>setActiveTab(13)}>Cultural</div> */}
       </nav>
       <TeamDetails tab={tabList[activeTab]} />
     </>

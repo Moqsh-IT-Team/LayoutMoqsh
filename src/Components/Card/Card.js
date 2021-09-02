@@ -1,13 +1,20 @@
 import "./Card.scss";
 
-function Card({ className, ImgSrc,title }) {
+function Card({ className, ImgSrc, title, src, style }) {
   return (
     <div className={`Card ${className}`}>
       <div className="Card__title">{title}</div>
       <div className="Card__image">
-        <img src={ImgSrc} alt="EventLogo" />
+        <img style={style} src={ImgSrc} alt="EventLogo" />
       </div>
-      <button className="Card__ViewMore">View More</button>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href={src}
+        className="Card__ViewMore"
+      >
+        View More
+      </a>
     </div>
   );
 }

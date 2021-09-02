@@ -42,16 +42,26 @@
     .Header {
       &__GoogleForm {
         position: absolute;
+        @include make-flex($just: space-between, $dir: row);
         top: 100px;
-        left: 94%;
+        left: 89%;
+        height: 50px;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        padding: 10px;
+        width: 155px;
+        background-color: #f3f3f3;
         text-decoration: none;
         cursor: pointer;
+        color: #000000;
+        column-gap: 6px;
+        font-size: 1.2rem;
         img {
-          height: 50px;
+          height: 40px;
           width: auto;
-          &:hover {
-            transform: scale(1.1);
-          }
+        }
+        &:hover {
+          transform: scale(1.1);
         }
       }
 

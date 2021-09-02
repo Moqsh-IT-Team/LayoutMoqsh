@@ -18,7 +18,7 @@ function LandingSection() {
 
       <div className="row-3 flex" aria-hidden>
         <h1>
-          EXCITING EVENTS AND CONTESTS WITH PRIZE POOL WORTH $2000 COMING SOON
+          EXCITING EVENTS AND CONTESTS WITH PRIZE POOL OF $2000 COMING SOON
         </h1>
         <CountdownSection />
       </div>

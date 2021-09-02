@@ -26,9 +26,11 @@
   &__ViewMore {
     margin-bottom: 20px;
     width: 250px;
+    @include make-flex();
     border-radius: 10px;
+    text-decoration: none;
     border: none;
-    background-color: #ff0000;
+    background-color: #25253e;
     color: #fff;
     font-family: "Raleway", sans-serif;
     font-size: 1.1rem;

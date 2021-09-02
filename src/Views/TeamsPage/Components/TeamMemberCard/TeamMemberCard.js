@@ -2,25 +2,32 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./TeamMemberCard.scss";
 
-import InstagramImage from "../../../../Assets/Images/instagram.png";
-import TwitterImage from "../../../../Assets/Images/twitter.png";
+// import InstagramImage from "../../../../Assets/Images/instagram.png";
+// import TwitterImage from "../../../../Assets/Images/twitter.png";
 import LinkedInImage from "../../../../Assets/Images/linkedin.png";
 
-
-function TeamMemberCard({ Name, Instagram, Twitter, LinkedIn, isHead }) {
+function TeamMemberCard({
+  Name,
+  Instagram,
+  Twitter,
+  isPresident,
+  LinkedIn,
+  isHead,
+}) {
   return (
     <div className="TeamMemberCardWrapper">
       <div className="TeamMemberCardWrapper__Role">
-        {isHead ? "Head" : "Member"}
+        {isPresident ? "President" : isHead ? "Head" : "Member"}
+        {/* {isHead ? "Head" : "Member"} */}
       </div>
       <img
-        src={`https://avatars.dicebear.com/api/male/${Name+Instagram}.svg`}
+        src={`https://avatars.dicebear.com/api/male/${Name + Instagram}.svg`}
         alt="Profile"
         className="TeamMemberCardWrapper__Image"
       />
       <div className="TeamMemberCardWrapper__Name">{Name}</div>
       <div className="TeamMemberCardWrapper__Social">
-        {Instagram !== "" && (
+        {/* {Instagram !== "" && (
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -37,7 +44,7 @@ function TeamMemberCard({ Name, Instagram, Twitter, LinkedIn, isHead }) {
           >
             <img src={TwitterImage} alt="Twitter" />
           </a>
-        )}
+        )} */}
         {LinkedIn !== "" && (
           <a
             target="_blank"

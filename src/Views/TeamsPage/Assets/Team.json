@@ -1,6 +1,6 @@
 {
   "Core": {
-    "Head": {
+    "President": {
       "Name": "Pawan Verma",
       "LinkedIn": "pawan-verma-iam",
       "Instagram": "mr_pawan_verma_"
@@ -21,18 +21,16 @@
   "IT": {
     "Head": {
       "Name": "Esha Goel",
-      "Instagram": "goelesha001",
       "Twitter": "esha-goel-336791185"
     },
     "Members": [
-      { "Name": "Pratham Aggarwal", "Instagram": "_prathammm" },
+      { "Name": "Pratham Aggarwal" },
       {
         "Name": "AB Santhosh",
-        "Instagram": "absanthosh_",
         "Twitter": "A_B_Santhosh",
         "LinkedIn": "a-b-santhosh-97872612b"
       },
-      { "Name": "Aryan Nagpal", "Instagram": "aryannagpal_" }
+      { "Name": "Aryan Nagpal" }
     ]
   },
   "Cultural": {}
