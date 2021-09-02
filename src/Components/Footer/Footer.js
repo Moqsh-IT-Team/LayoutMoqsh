@@ -16,11 +16,11 @@ function Footer() {
         <div className="FooterSection__Top__Contact">
           <span className="FooterSection__Top__Contact--heading">Mail</span>
           <span className="FooterSection__Top__Contact--text first">
-            Pawan Verma - <i>President</i> <br /> pv635@snu.edu.in
+            Pawan Verma - <i>Moqsh President</i> <br /> pv635@snu.edu.in
           </span>
           <span className="FooterSection__Top__Contact--heading">Phone</span>
           <span className="FooterSection__Top__Contact--text">
-            Pawan Verma - <i>President</i> <br /> 9793798823
+            Pawan Verma - <i>Moqsh President</i> <br /> 9793798823
           </span>
         </div>
 

@@ -17,6 +17,7 @@ function TeamDetails({ tab }) {
             Name={currentTeam.Name}
             isPresident={currentTeam.Name === "Pawan Verma"}
             isHead={true}
+            currentTeam={currentTeam}
             LinkedIn={currentTeam.LinkedIn}
           />
           {currentTeam.Members.map((member, index) => (

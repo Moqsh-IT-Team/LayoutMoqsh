@@ -45,10 +45,10 @@
         @include make-flex($just: space-between, $dir: row);
         top: 100px;
         left: 89%;
-        height: 50px;
         border: 1px solid #000000;
         border-radius: 4px;
         padding: 10px;
+        height: 50px;
         width: 155px;
         background-color: #f3f3f3;
         text-decoration: none;
@@ -129,8 +129,11 @@
 
       .Header {
         &__GoogleForm {
-          top: 90px;
-          left: 87%;
+          top: 91px;
+    left: 82%;
+    height: 117px;
+    width: 59px;
+          flex-direction: column;
           img {
             height: 42px;
             &:hover {
