@@ -5,15 +5,15 @@
   width: 310px !important;
   z-index: 1 !important;
   // margin: 0 -21px !important;
-  img {
+  // img {
     // height: 85% !important;
-    position: absolute;
-    height: 80% !important;
-    width: 100% !important;
-    top: 0px;
-    border-radius: 20px 20px 0 0;
+    // position: absolute;
+    // height: 80% !important;
+    // width: 100% !important;
+    // top: 0px;
+    // border-radius: 20px 20px 0 0;
     // width: 85% !important;
-  }
+  // }
 }
 
 .Card {
@@ -39,7 +39,7 @@
     height: 80%;
     @include make-flex();
     img {
-      height: 85%;
+      // height: 85%;
       width: 80%;
     }
   }
@@ -47,11 +47,13 @@
     width: 60%;
     border-radius: 10px;
     border: none;
-    background-color: #ff0000;
+    background-color: #25253e;
     color: #fff;
     font-family: "Raleway", sans-serif;
     font-size: 1.1rem;
     cursor: pointer;
+    text-decoration: none;
     height: 50px;
+    @include make-flex();
   }
 }

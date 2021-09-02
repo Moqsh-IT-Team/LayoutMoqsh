@@ -48,7 +48,7 @@ function Header() {
             }}
             className="contents__item home"
           >
-            <a href="/#LandingSection">Home</a>
+            <a href="/">Home</a>
           </div>
           <div
             onClick={() => {
@@ -100,6 +100,7 @@ function Header() {
             rel="noopener noreferrer"
             className="Header__GoogleForm"
           >
+            Need help?
             <img src={Form} alt="Google form" />
           </a>
         )}

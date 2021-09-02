@@ -13,6 +13,7 @@ import club3 from "../../../../Assets/Images/ClubLogo3.jpeg";
 import club4 from "../../../../Assets/Images/ClubLogo4.jpeg";
 import club5 from "../../../../Assets/Images/ClubLogo5.jpg";
 import club6 from "../../../../Assets/Images/ClubLogo6.jpg";
+import club7 from "../../../../Assets/Images/ClubLogo7.png";
 
 function AboutSection() {
   const AUTOPLAY_INTERVAL = 2500;
@@ -68,6 +69,7 @@ function AboutSection() {
             <ClubCard className="AboutSection__slide" src={club4} />
             <ClubCard className="AboutSection__slide" src={club5} />
             <ClubCard className="AboutSection__slide" src={club6} />
+            <ClubCard className="AboutSection__slide" src={club7} />
           </div>
         </div>
       </div>

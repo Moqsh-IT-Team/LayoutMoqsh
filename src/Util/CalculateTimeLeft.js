@@ -1,6 +1,5 @@
 export default function calculateTimeLeft() {
-  let year = new Date().getFullYear();
-  let difference = +new Date(`11/7/${year}`) - +new Date();
+  let difference = new Date(`11/12/2021`) - new Date();
   let timeLeft = {};
   if (difference > 0) {
     timeLeft = {

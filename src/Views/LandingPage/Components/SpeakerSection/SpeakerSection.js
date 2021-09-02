@@ -103,7 +103,14 @@ function SpeakerSection() {
             style={{ height: "110px", width: "110px" }}
           />
         </Accordion> */}
-        <button className="SpeakerSection__ViewMore"> View More </button>
+        <a
+          href="https://www.instagram.com/smemoqsh/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="SpeakerSection__ViewMore"
+        >
+          View More
+        </a>
       </div>
     </section>
   );
