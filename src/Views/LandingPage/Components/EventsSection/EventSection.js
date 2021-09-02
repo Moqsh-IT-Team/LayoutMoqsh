@@ -5,10 +5,6 @@ import { useEffect } from "react";
 import React from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
-// Temp
-import leftEvent from "../../../../Assets/Events/Crackthedeal.png";
-import mainEvent from "../../../../Assets/Events/Bullandbear.jpg";
-import rightEvent from "../../../../Assets/Events/merkit.png";
 import SectionHeader from "../../../../Components/SectionHeading/SectionHeading";
 
 import Kautilya from "../../../../Assets/Images/ClubLogo1.jpeg";
