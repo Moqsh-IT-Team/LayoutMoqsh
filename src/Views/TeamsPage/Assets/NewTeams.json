@@ -1,10 +1,10 @@
 {
-  "Core": {
+  "Core": {},
+  "Club": {},
+  "Moqsh 2021-22 Advisors": {
     "Name": "Pawan Verma",
     "LinkedIn": "pawan-verma-iam",
-
+    "Image":"https://raw.githubusercontent.com/Moqsh-IT-Team/LayoutMoqsh/main/src/Assets/people/PawanVerma.jpg",
     "Members": []
-  },
-  "Club": {},
-  "Moqsh 2021-22 Advisors": {}
+  }
 }

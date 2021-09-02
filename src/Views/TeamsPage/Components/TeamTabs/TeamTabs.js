@@ -3,7 +3,7 @@ import "./TeamTabs.scss";
 import TeamDetails from "../TeamDetails/TeamDetails";
 
 function TeamTabs({ props }) {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(2);
 
   // const tabList = [
   //   "Core",

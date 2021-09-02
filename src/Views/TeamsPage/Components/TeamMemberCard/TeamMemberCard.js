@@ -12,16 +12,21 @@ function TeamMemberCard({
   Twitter,
   isPresident,
   LinkedIn,
+  currentTeam,
   isHead,
 }) {
   return (
     <div className="TeamMemberCardWrapper">
       <div className="TeamMemberCardWrapper__Role">
-        {isPresident ? "President" : isHead ? "Head" : "Member"}
+        {isPresident ? "Moqsh President" : isHead ? "Head" : "Member"}
         {/* {isHead ? "Head" : "Member"} */}
       </div>
       <img
-        src={`https://avatars.dicebear.com/api/male/${Name + Instagram}.svg`}
+        src={
+          Object.keys(currentTeam).includes("Image")
+            ? currentTeam.Image
+            : `https://avatars.dicebear.com/api/male/${Name + Instagram}.svg`
+        }
         alt="Profile"
         className="TeamMemberCardWrapper__Image"
       />
