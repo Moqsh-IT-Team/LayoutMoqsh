@@ -6,7 +6,12 @@ h1,
 h2 {
   font-family: "Raleway";
   width: auto;
+  text-align: center;
+ .hashtag{
+   font-size: 3.2rem;
+ }
 }
+
 .moqsh-logo {
   height: 200px;
   @include make-flex();
@@ -95,6 +100,9 @@ h2 {
   h2 {
     font-size: 1.6rem;
     text-align: center;
+    .hashtag{
+      font-size: 1.4rem;
+    }
   }
   .row-2 {
     margin-bottom: 30px;
