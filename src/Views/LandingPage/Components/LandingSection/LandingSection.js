@@ -13,13 +13,13 @@ function LandingSection() {
         <h1>THE ANNUAL MANAGMENT FEST OF SNU</h1>
         <h2>
           Redefining <span>the future </span>
+          <br />
+          <span className="hashtag">#GrowAgainstAllTheOdds</span>
         </h2>
       </div>
 
       <div className="row-3 flex" aria-hidden>
-        <h1>
-          EXCITING EVENTS AND CONTESTS WITH PRIZES COMING SOON
-        </h1>
+        <h1>EXCITING EVENTS AND CONTESTS WITH PRIZES COMING SOON</h1>
         <CountdownSection />
       </div>
     </section>
