@@ -130,9 +130,9 @@
       .Header {
         &__GoogleForm {
           top: 91px;
-    left: 82%;
-    height: 117px;
-    width: 59px;
+          left: 82%;
+          height: 117px;
+          width: 59px;
           flex-direction: column;
           img {
             height: 42px;
@@ -171,17 +171,7 @@
         }
       }
 
-      #NavBarInput:checked ~ .hamButton > label > .span.HL1 {
-        opacity: 1;
-        transform: rotate(45deg) translate(0px, 0px);
-      }
-      #NavBarInput:checked ~ .hamButton > label > .span.HL2 {
-        opacity: 0;
-        transform: rotate(0deg) scale(0.2, 0.2);
-      }
-      #NavBarInput:checked ~ .hamButton > label > .span.HL3 {
-        transform: rotate(-45deg) translate(1px, -6px);
-      }
+     
     }
   }
 }
