@@ -11,7 +11,7 @@ import Kautilya from "../../../../Assets/Images/ClubLogo1.jpeg";
 import Ideonator from "../../../../Assets/Images/ClubLogo7.png";
 import Markitact from "../../../../Assets/Images/ClubLogo2.jpeg";
 import Bizvilla from "../../../../Assets/Images/ClubLogo4.jpeg";
-import Externix from "../../../../Assets/Temp/EventLeft.png";
+import Externix from "../../../../Assets/Events/CONSULTAR.png";
 import HRythm from "../../../../Assets/Images/ClubLogo3.jpeg";
 import Moqsh from "../../../../Assets/Images/logo.jpg";
 
@@ -70,8 +70,8 @@ function EventSection() {
             />
             <Card
               className="embla__slide"
-              title="Externix 5.0"
-              src="https://dare2compete.com/competition/externix-50-moqsh-2020-shiv-nadar-university-snu-greater-noida-135409"
+              title="Externix 6.0"
+              src="https://dare2compete.com/competition/externix-60-moqsh-2021-22-shiv-nadar-university-snu-greater-noida-196990?lb=DeVuyMs"
               ImgSrc={Externix}
             />
             <Card
