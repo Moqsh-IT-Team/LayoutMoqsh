@@ -12,19 +12,22 @@ function TeamMemberCard({
   Twitter,
   isPresident,
   LinkedIn,
+  image,
   currentTeam,
   isHead,
+  position,
 }) {
   return (
     <div className="TeamMemberCardWrapper">
       <div className="TeamMemberCardWrapper__Role">
-        {isPresident ? "Moqsh President" : isHead ? "Head" : "Member"}
-        {/* {isHead ? "Head" : "Member"} */}
+        {/* {isPresident ? "Moqsh President" : isHead ? "Head" : "Member"} */}
+        {position}
       </div>
       <img
         src={
-          Object.keys(currentTeam).includes("Image")
-            ? currentTeam.Image
+          image
+            ? "https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=2592000&url=" +
+              encodeURIComponent(image)
             : `https://avatars.dicebear.com/api/male/${Name + Instagram}.svg`
         }
         alt="Profile"

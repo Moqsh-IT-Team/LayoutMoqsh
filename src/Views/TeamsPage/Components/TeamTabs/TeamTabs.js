@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./TeamTabs.scss";
 import TeamDetails from "../TeamDetails/TeamDetails";
+import Club from "../Club/Club";
 
 function TeamTabs({ props }) {
-  const [activeTab, setActiveTab] = useState(2);
+  const [activeTab, setActiveTab] = useState(1);
 
   // const tabList = [
   //   "Core",
@@ -53,7 +54,11 @@ function TeamTabs({ props }) {
         <div className={`TeamTabsWrapper__TabItem${activeTab===12 ?"--selected" :""}`} onClick={()=>setActiveTab(12)}>IT</div>
         <div className={`TeamTabsWrapper__TabItem${activeTab===13 ?"--selected" :""}`} onClick={()=>setActiveTab(13)}>Cultural</div> */}
       </nav>
-      <TeamDetails tab={tabList[activeTab]} />
+      {tabList[activeTab] === "Club" ? (
+        <Club />
+      ) : (
+        <TeamDetails tab={tabList[activeTab]} />
+      )}
     </>
   );
 }
