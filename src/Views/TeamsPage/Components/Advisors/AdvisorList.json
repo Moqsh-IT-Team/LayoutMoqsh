@@ -1,0 +1,85 @@
+{
+  "Faculty Advisor": [
+    {
+      "Name": "Dr. Bibek Banerjee",
+      "Profile": "https://snu.edu.in/bibek-banerjee",
+      "Position": "Faculty Advisor",
+      "Image": "https://snu.edu.in/sites/default/files/styles/faculty_profile_images_172x241/public/images/people/DrBenerjee_0.jpeg?itok=hSOCGUxA"
+    },
+    {
+      "Name": "Dr. Vishwanatha Saragur Ramanna",
+      "Profile": "https://finance.snu.edu.in/people/faculty/dr-vishwanatha-ramanna",
+      "Position": "Faculty Advisor",
+      "Image": "https://finance.snu.edu.in/sites/default/files/styles/faculty_profile_images_172x241/public/images/people/sme-vishwanath-n.jpg?itok=MnAvc-EV"
+    },
+    {
+      "Name": "Prof. Pradeep Mehra",
+      "Profile": "https://strategy.snu.edu.in/people/faculty/prof-pradeep-mehra",
+      "Position": "Faculty Advisor",
+      "Image": "https://strategy.snu.edu.in/sites/default/files/styles/faculty_profile_images_172x241/public/images/people/pradeep-verma_0.jpg?itok=adJjICBM"
+    },
+    {
+      "Name": "Partha Chatterjee",
+      "Profile": "https://economics.snu.edu.in/people/faculty/partha-chatterjee",
+      "Position": "Faculty Advisor",
+      "Image": "https://economics.snu.edu.in/sites/default/files/styles/faculty_profile_images_172x241/public/images/people/2016/Nov/22/partha.jpg?itok=pLUhaoD8"
+    },
+    {
+      "Name": "Dr. Ankur Mehra",
+      "Profile": "https://finance.snu.edu.in/people/faculty/dr-ankur-mehra",
+      "Position": "Faculty Advisor",
+      "Image": "https://finance.snu.edu.in/sites/default/files/styles/faculty_profile_images_172x241/public/images/people/Sme-Faculty08_0.jpg?itok=5xfYZe3M"
+    },
+    {
+      "Name": "Prof. Shalu Kalra",
+      "Position": "Faculty Advisor",
+      "Profile": "https://finance.snu.edu.in/people/faculty/dr-shalu-kalra",
+      "Image": "https://finance.snu.edu.in/sites/default/files/styles/faculty_profile_images_172x241/public/images/people/Sme-Faculty11_0.jpg?itok=BZD84ue3"
+    }
+  ],
+  "Program Advisor": [
+    {
+      "Name": "Tusha Chandra",
+      "Profile": "https://sme.snu.edu.in/people/staff/tusha-chandra",
+      "Position": "Program Advisor",
+      "LinkedIn": "tusha-chandra-83b875157",
+      "Image": "https://media-exp1.licdn.com/dms/image/C5103AQESJtTXCJPqQg/profile-displayphoto-shrink_800_800/0/1519281590381?e=1637193600&v=beta&t=7eaf1RGCn9JFjAa5jUdNnrTsyTj4-On4pHKJaKRrw3Q"
+    },
+    {
+      "Name": "Winky Jain",
+      "LinkedIn": "winky-jain-62bba998",
+      "Position": "Program Advisor",
+      "Image": "https://media-exp1.licdn.com/dms/image/C5103AQESaqEudGuFEg/profile-displayphoto-shrink_800_800/0/1573291936428?e=1637193600&v=beta&t=BBsP5BWh5r8Rn7F74UvqBxZZ5Gj5JPSuNIdBvVfQUb8"
+    },
+    {
+      "Name": "Shubra (Gupta) Chetan",
+      "LinkedIn": "shubra-chetan-2725536",
+      "Position": "Program Advisor",
+      "Image": "https://media-exp1.licdn.com/dms/image/C4E03AQEngSWzI1ZJog/profile-displayphoto-shrink_800_800/0/1517688260606?e=1637193600&v=beta&t=dYx0g7g-eDGDCkiAuDHjW7sGpJn6tgub94EKViwDOxQ"
+    }
+  ],
+  "Outreach Advisor": [
+    {
+      "Name": "Jagmeet Kaur",
+      "LinkedIn": "jagmeet-kaur-3044511a0/",
+      "Position": "Outreach Advisor",
+
+      "Image": "https://sme.snu.edu.in/sites/default/files/styles/image_size_245_290/public/default_images/photo-not-availabale02_0.jpg?itok=_2m8hCVj"
+    },
+    {
+      "Name": "Aparna Mishra",
+      "LinkedIn": "aparna-p-mishra",
+      "Position": "Outreach Advisor",
+
+      "Image": "https://media-exp1.licdn.com/dms/image/C5603AQHxbBK9Py7cyg/profile-displayphoto-shrink_800_800/0/1609945191218?e=1637193600&v=beta&t=DRIbjxHIyF5JpcKTUCvmVsd3bOPwVSR5_gRPmq_O6BI"
+    }
+  ],
+  "Sponsorship Advisor": [
+    {
+      "Name": "Lakshya Kabra",
+      "LinkedIn": "lakshya-kabra-614b9515",
+      "Position": "Sponsorship Advisor",
+      "Image": "https://media-exp1.licdn.com/dms/image/C5103AQH7cp_7bYlm2g/profile-displayphoto-shrink_800_800/0/1542713880513?e=1637193600&v=beta&t=M5PaSMoANt5lGM_tCVMUdN2WPb1g5j4f6wYwEkTEyc8"
+    }
+  ]
+}

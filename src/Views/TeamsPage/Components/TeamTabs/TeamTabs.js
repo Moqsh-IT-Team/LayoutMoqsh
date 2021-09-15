@@ -3,9 +3,10 @@ import "./TeamTabs.scss";
 import TeamDetails from "../TeamDetails/TeamDetails";
 import Club from "../Club/Club";
 import Core from "../Core/Core";
+import Advisors from "../Advisors/Advisors";
 
 function TeamTabs() {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(1);
 
   const tabList = ["Core", "Club", "MOQSH 2021-22 Advisors"];
   return (
@@ -23,17 +24,10 @@ function TeamTabs() {
           </div>
         ))}
       </nav>
-      {tabList[activeTab] === "Club" ? (
-        <Club />
-      ) : (
-        <>
-          {tabList[activeTab] === "Core" ? (
-            <Core />
-          ) : (
-            <TeamDetails tab={tabList[activeTab]} />
-          )}
-        </>
-      )}
+      {tabList[activeTab] === "Club" && <Club />}
+      {tabList[activeTab] === "Core" && <Core />}
+      {tabList[activeTab] === "MOQSH 2021-22 Advisors" && <Advisors/>}
+      
     </>
   );
 }
