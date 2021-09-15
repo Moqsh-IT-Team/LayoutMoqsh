@@ -7,7 +7,7 @@ import Core from "../Core/Core";
 function TeamTabs() {
   const [activeTab, setActiveTab] = useState(0);
 
-  const tabList = ["Core", "Club", "Moqsh 2021-22 Advisors"];
+  const tabList = ["Core", "Club", "MOQSH 2021-22 Advisors"];
   return (
     <>
       <nav className="TeamTabsWrapper">

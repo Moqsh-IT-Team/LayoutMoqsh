@@ -5,7 +5,6 @@ import TeamMemberCard from "../TeamMemberCard/TeamMemberCard";
 
 function TeamDetails({ tab }) {
   let currentTeam = Team[tab];
-  console.log(tab);
   return (
     <div className="TeamDetailsWrapper">
       {Object.keys(currentTeam).length === 0 ? (
