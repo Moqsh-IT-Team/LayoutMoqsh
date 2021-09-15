@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./TeamTabs.scss";
-import TeamDetails from "../TeamDetails/TeamDetails";
+// import TeamDetails from "../TeamDetails/TeamDetails";
 import Club from "../Club/Club";
 import Core from "../Core/Core";
 import Advisors from "../Advisors/Advisors";
