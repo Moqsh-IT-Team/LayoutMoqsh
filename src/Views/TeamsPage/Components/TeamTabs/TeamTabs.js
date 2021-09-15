@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "./TeamTabs.scss";
 import TeamDetails from "../TeamDetails/TeamDetails";
 import Club from "../Club/Club";
+import Core from "../Core/Core";
 
 function TeamTabs() {
-  const [activeTab, setActiveTab] = useState(1);
+  const [activeTab, setActiveTab] = useState(0);
 
   const tabList = ["Core", "Club", "Moqsh 2021-22 Advisors"];
   return (
@@ -25,7 +26,13 @@ function TeamTabs() {
       {tabList[activeTab] === "Club" ? (
         <Club />
       ) : (
-        <TeamDetails tab={tabList[activeTab]} />
+        <>
+          {tabList[activeTab] === "Core" ? (
+            <Core />
+          ) : (
+            <TeamDetails tab={tabList[activeTab]} />
+          )}
+        </>
       )}
     </>
   );
