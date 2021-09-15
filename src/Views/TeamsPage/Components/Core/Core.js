@@ -1,19 +1,32 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './Core.scss';
+import React from "react";
+import TeamMemberCard from "../TeamMemberCard/TeamMemberCard";
+import "./Core.scss";
+import Structure from "./Structure.json";
+function Core() {
+  return (
+    <div className="CoreWrapper">
+      {Object.values(Structure).map((obj, key) => (
+        // <div className="CoreWrapper__section">
+        //   <div className="CoreWrapper__heading">{Object.keys(Structure)[key].replace("&"," & ") + " Team"}</div>
+        <div className="CoreWrapper__cardHolder">
+          {Object.values(obj).map((obj, key) => (
+            <TeamMemberCard
+              key={key}
+              Name={obj.Name}
+              position={obj.position}
+              LinkedIn={obj.LinkedIn}
+              image={obj.Image}
+            />
+          ))}
+        </div>
+        // </div>
+      ))}
+    </div>
+  );
+}
 
-const Core = (props) => (
-  <div className="CoreWrapper">
-    Test content
-  </div>
-);
+Core.propTypes = {};
 
-Core.propTypes = {
-  // bla: PropTypes.string,
-};
-
-Core.defaultProps = {
-  // bla: 'test',
-};
+Core.defaultProps = {};
 
 export default Core;
