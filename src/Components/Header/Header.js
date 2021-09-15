@@ -11,7 +11,7 @@ function Header() {
       <div className="HeaderContainer__Header">
         <a className="HeaderContainer__redirect" href="/">
           <img className="Header__logo" alt="Logo" src={HeaderLogo} />
-          <span>Moqsh</span>
+          <span>MOQSH</span>
         </a>
 
         <input
