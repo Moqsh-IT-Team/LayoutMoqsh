@@ -1,4 +1,22 @@
 {
+  "_": {
+    "Mail": "",
+    "President": {
+      "Name": "Pawan Verma",
+      "LinkedIn": "pawan-verma-iam/",
+      "Image": "https://media-exp1.licdn.com/dms/image/C4E03AQGt_65qPTOQbg/profile-displayphoto-shrink_200_200/0/1623418693985?e=1637193600&v=beta&t=kI7JIaoOlrpjSeE3qIe32v4I1NfV8U5sxgLmPstGk5E"
+    },
+    "Moqsh Student Advisor": {
+      "Name": "Abhijeet Shrivastava",
+      "LinkedIn": "abhijeet-shrivastava-488995a3/",
+      "Image": "https://media-exp1.licdn.com/dms/image/C5603AQEEFsLhm59Acw/profile-displayphoto-shrink_800_800/0/1590230695405?e=1637193600&v=beta&t=Vnyf50nCcQzey6EKt6TWGB7eXWwCtaOi7pJ5baIYeXY"
+    },
+    "Faculty Advisor": {
+      "Name": "Prof. Vishwanath Sir",
+      "Profile": "https://finance.snu.edu.in/people/faculty/dr-vishwanatha-ramanna",
+      "Image": "https://finance.snu.edu.in/sites/default/files/styles/faculty_profile_images_172x241/public/images/people/sme-vishwanath-n.jpg?itok=MnAvc-EV"
+    }
+  },
   "Markitact": {
     "Mail": "markitact@snu.edu.in",
     "Secretary": {
@@ -6,12 +24,12 @@
       "LinkedIn": "kanishk-bhushan-30b35218a/",
       "Image": "https://media-exp1.licdn.com/dms/image/D4E35AQHFyW8ZX2awIA/profile-framedphoto-shrink_200_200/0/1626201314261?e=1631732400&v=beta&t=RG7RmuU5cbg3lyt_OhBZ9Oc-PgDzQfHWiAyrqXMUjuc"
     },
-    "ClubAdvisor": {
+    "Club Advisor": {
       "Name": "Morvi Dhawan",
       "LinkedIn": "morvi-dhawan-b7912712b/",
       "Image": "https://media-exp1.licdn.com/dms/image/C5103AQHDNCIHzvYgrA/profile-displayphoto-shrink_200_200/0/1560049335023?e=1637193600&v=beta&t=dzVlpwByVyPQiWfk0h4eAwQnovHUxGKs3niDiBilExI"
     },
-    "Faculty advisor": {
+    "Faculty Advisor": {
       "Name": "Dr Prof. Sudarshan Naidu",
       "Profile": "https://marketing.snu.edu.in/people/faculty/dr-nt-sudarshan-naidu",
       "Image": "https://marketing.snu.edu.in/sites/default/files/styles/faculty_profile_images_172x241/public/images/people/Sme-Faculty09_0.jpg?itok=BgLPWlAE"
@@ -24,12 +42,12 @@
       "LinkedIn": "shantanu-agnihotry-sa29",
       "Image": "https://media-exp1.licdn.com/dms/image/C5603AQHykFuN-5-9PA/profile-displayphoto-shrink_200_200/0/1608531601938?e=1637193600&v=beta&t=1ObHYCuq5gySfWhYHLp4w8li6HWHgQWpD6DuOhBcc94"
     },
-    "ClubAdvisor": {
+    "Club Advisor": {
       "Name": "Gokulakrishnan V",
       "LinkedIn": "gokulakrishnan-v-a89809b2/",
       "Image": "https://media-exp1.licdn.com/dms/image/C5603AQGI_Qn9jgeIOw/profile-displayphoto-shrink_200_200/0/1626187968973?e=1637193600&v=beta&t=LZnrkC0Y3E7M5YV8rEH4mtMlef37rkKOmr-PQ2itlbc"
     },
-    "Faculty advisor": {
+    "Faculty Advisor": {
       "Name": "Prof. Surya Majumdar",
       "Profile": "https://operationsmgmt.snu.edu.in/people/faculty/dr-surya-majumdar",
       "Image": "https://operationsmgmt.snu.edu.in/sites/default/files/styles/faculty_profile_images_172x241/public/images/people/Sme-Faculty02_0.jpg?itok=yIjPVV84"
@@ -42,12 +60,12 @@
       "LinkedIn": "marina-varghese-2a239a1b9",
       "Image": "https://media-exp1.licdn.com/dms/image/C5603AQEoqrHzp6QhRA/profile-displayphoto-shrink_200_200/0/1602918456563?e=1637193600&v=beta&t=rbF-JynZ7RG5gdgf9Ez0ZpG8d-dqsk3YzMdi0TuaGAg"
     },
-    "ClubAdvisor": {
+    "Club Advisor": {
       "Name": "Shubham Khanduja",
       "LinkedIn": "shubham-khanduja/",
       "Image": "https://media-exp1.licdn.com/dms/image/C4E03AQH9X0goNE3D1w/profile-displayphoto-shrink_200_200/0/1609765708802?e=1637193600&v=beta&t=5DOEeF2i7PTa23xaYp9hMAmwAjanOuw4znGA3TiFE2c"
     },
-    "Faculty advisor": {
+    "Faculty Advisor": {
       "Name": "Prof. Paromita Goswami",
       "Profile": "https://marketing.snu.edu.in/people/faculty/dr-paromita-goswami",
       "Image": "https://marketing.snu.edu.in/sites/default/files/styles/faculty_profile_images_172x241/public/images/people/Sme-Faculty01_0.jpg?itok=uFWbMy93"
@@ -60,12 +78,12 @@
       "LinkedIn": "harshvardhanag26",
       "Image": "https://media-exp1.licdn.com/dms/image/C5603AQGyZRBu5pnsqQ/profile-displayphoto-shrink_200_200/0/1587802999884?e=1637193600&v=beta&t=KC4skzNVSkR_Gfk2g7SHcjPR0bwbG9zw8dl5RBKBx0s"
     },
-    "ClubAdvisor": {
+    "Club Advisor": {
       "Name": "Malvika Chandel",
       "LinkedIn": "malvika-chandel-549759110/",
       "Image": "https://media-exp1.licdn.com/dms/image/C4E03AQHBGZOUATwXvg/profile-displayphoto-shrink_200_200/0/1604314278178?e=1637193600&v=beta&t=2DvvL83j_UjOLuCYz-ek_cXmTtfc_RGaRsIWgN-IoFw"
     },
-    "Faculty advisor": {
+    "Faculty Advisor": {
       "Name": "Prof. Partha Sarathi Roy",
       "Profile": "https://strategy.snu.edu.in/people/faculty/dr-partha-sarathi-roy",
       "Image": "https://strategy.snu.edu.in/sites/default/files/styles/faculty_profile_images_172x241/public/images/people/Sme-Faculty10_0.jpg?itok=wgqY86Rx"
@@ -78,17 +96,17 @@
       "LinkedIn": "shruti-soni-25b8221aa/ ",
       "Image": "https://media-exp1.licdn.com/dms/image/D4E03AQEAx-Wd2G_tew/profile-displayphoto-shrink_200_200/0/1629228204187?e=1637193600&v=beta&t=GcGAy330vX1LtjOMNBoI5HXYeVb6vDpR5ge33W3cg_4"
     },
-    "ClubAdvisor": {
+    "Club Advisor": {
       "Name": "Jyoti Negi",
       "LinkedIn": "jyoti-negi-813380176/",
       "Image": "https://media-exp1.licdn.com/dms/image/C4E03AQFE5LPZeejPrQ/profile-displayphoto-shrink_200_200/0/1600661034670?e=1637193600&v=beta&t=rK7eB1Ub6yKecYGRew-aP_MoFTXnWyQiejBZqmM8rSA"
     },
-    "Faculty advisor 1": {
+    "Faculty Advisor": {
       "Name": "Dr. Kaushik Chaudhuri",
       "Profile": "https://obhm.snu.edu.in/people/faculty/dr-kaushik-chaudhuri",
       "Image": "https://obhm.snu.edu.in/sites/default/files/styles/faculty_profile_images_172x241/public/images/people/Kaushik-Choudhury-v2.jpg?itok=xvuRlLXu"
     },
-    "Faculty advisor 2": {
+    "Faculty Advisor_": {
       "Name": "Dr. Vivek Khanna",
       "Profile": "https://obhm.snu.edu.in/people/faculty/dr-vivek-khanna",
       "Image": "https://obhm.snu.edu.in/sites/default/files/styles/faculty_profile_images_172x241/public/images/people/20200122_110448.jpg?itok=YKjru17E"
@@ -101,12 +119,12 @@
       "LinkedIn": "piyush-gupta-89574519b/",
       "Image": "https://media-exp1.licdn.com/dms/image/C5603AQFKJa_e7UCpTg/profile-displayphoto-shrink_200_200/0/1626930599810?e=1637193600&v=beta&t=hEERw7qeGKxpRl9SxFNZ655vs6p99-DagqLio4enj10"
     },
-    "ClubAdvisor": {
+    "Club Advisor": {
       "Name": "Sejal Gupta",
       "LinkedIn": "sejal-gupta-2466a3196/",
       "Image": "https://media-exp1.licdn.com/dms/image/C5103AQFnGeeM-2iA1A/profile-displayphoto-shrink_200_200/0/1581412420202?e=1637193600&v=beta&t=ciIKk3cI3Roj2Q4-oSn9Wym0ob5X1Ns8xXnP2BAcXMo"
     },
-    "Faculty advisor": {
+    "Faculty Advisor": {
       "Name": "Prof. Vishwanath Sir",
       "Profile": "https://finance.snu.edu.in/people/faculty/dr-vishwanatha-ramanna",
       "Image": "https://finance.snu.edu.in/sites/default/files/styles/faculty_profile_images_172x241/public/images/people/sme-vishwanath-n.jpg?itok=MnAvc-EV"
@@ -119,12 +137,12 @@
       "LinkedIn": "anushka-anand-62982a193/",
       "Image": "https://media-exp1.licdn.com/dms/image/C4E03AQG91a0NJXGSHw/profile-displayphoto-shrink_200_200/0/1625897250510?e=1637193600&v=beta&t=l-v10zaIbRN3ICOSp9CRHTSa6R_rbgaxdqF_y6iChPw"
     },
-    "ClubAdvisor": {
-      "Name": "Pawan Verma",
-      "LinkedIn": "pawan-verma-iam/",
-      "Image": "https://media-exp1.licdn.com/dms/image/C4E03AQGt_65qPTOQbg/profile-displayphoto-shrink_200_200/0/1623418693985?e=1637193600&v=beta&t=kI7JIaoOlrpjSeE3qIe32v4I1NfV8U5sxgLmPstGk5E"
+    "Club Advisor": {
+      "Name": "Anukriti",
+      "LinkedIn": "anukriti0305/",
+      "Image": "https://media-exp1.licdn.com/dms/image/C5103AQGFL1nJn69qOQ/profile-displayphoto-shrink_800_800/0/1580711591776?e=1637193600&v=beta&t=eCLbrEorKntSjUzM4fwsFvL0ezKEOnidKGD2966_788"
     },
-    "Faculty advisor": {
+    "Faculty Advisor": {
       "Name": "Prof. Shalu Kalra",
       "Profile": "https://finance.snu.edu.in/people/faculty/dr-shalu-kalra",
       "Image": "https://finance.snu.edu.in/sites/default/files/styles/faculty_profile_images_172x241/public/images/people/Sme-Faculty11_0.jpg?itok=BZD84ue3"

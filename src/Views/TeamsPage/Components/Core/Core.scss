@@ -1,0 +1,16 @@
+@import "../../../../styles/mixins";
+
+.CoreWrapper {
+  min-height: 500px;
+  width: 100%;
+  @include make-flex($dir: row);
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+  &::after,
+  &::before {
+    content: "";
+    height: 0.1px;
+    width: 100%;
+  }
+}

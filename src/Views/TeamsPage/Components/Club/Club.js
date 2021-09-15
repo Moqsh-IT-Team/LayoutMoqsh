@@ -11,6 +11,15 @@ function Club() {
         <div className="ClubWrapper">
           <div className="ClubWrapper__clubHeader">
             {Object.keys(Members)[key].replace("_", " ")}
+            {Object.values(member)[0] !== "" && (
+              <span className="ClubWrapper__clubMail">
+                (
+                <a href={`mailTo:${Object.values(member)[0]}`}>
+                  <i>{Object.values(member)[0]}</i>
+                </a>
+                )
+              </span>
+            )}
           </div>
           <div className="ClubWrapper__cardsHolder">
             {Object.values(member).map((obj, key) => (
@@ -19,8 +28,9 @@ function Club() {
                   <TeamMemberCard
                     key={key}
                     Name={obj.Name}
-                    position={Object.keys(member)[key]}
+                    position={Object.keys(member)[key].replace("_", "")}
                     image={obj.Image}
+                    profilePage={obj.Profile}
                     LinkedIn={obj.LinkedIn}
                   />
                 )}
