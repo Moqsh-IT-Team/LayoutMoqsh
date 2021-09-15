@@ -37,6 +37,30 @@
       "Image": "https://finance.snu.edu.in/sites/default/files/styles/faculty_profile_images_172x241/public/images/people/Sme-Faculty11_0.jpg?itok=BZD84ue3"
     }
   ],
+  "Outreach Advisor": [
+    {
+      "Name": "Jagmeet Kaur",
+      "LinkedIn": "jagmeet-kaur-3044511a0/",
+      "Position": "Outreach Advisor",
+
+      "Image": "https://sme.snu.edu.in/sites/default/files/styles/image_size_245_290/public/default_images/photo-not-availabale02_0.jpg?itok=_2m8hCVj"
+    },
+    {
+      "Name": "Aparna Mishra",
+      "LinkedIn": "aparna-p-mishra",
+      "Position": "CDC Advisor",
+
+      "Image": "https://media-exp1.licdn.com/dms/image/C5603AQHxbBK9Py7cyg/profile-displayphoto-shrink_800_800/0/1609945191218?e=1637193600&v=beta&t=DRIbjxHIyF5JpcKTUCvmVsd3bOPwVSR5_gRPmq_O6BI"
+    }
+  ],
+  "Sponsorship Advisor": [
+    {
+      "Name": "Lakshya Kabra",
+      "LinkedIn": "lakshya-kabra-614b9515",
+      "Position": "Sponsorship Advisor",
+      "Image": "https://media-exp1.licdn.com/dms/image/C5103AQH7cp_7bYlm2g/profile-displayphoto-shrink_800_800/0/1542713880513?e=1637193600&v=beta&t=M5PaSMoANt5lGM_tCVMUdN2WPb1g5j4f6wYwEkTEyc8"
+    }
+  ],
   "Program Advisor": [
     {
       "Name": "Tusha Chandra",
@@ -56,30 +80,6 @@
       "LinkedIn": "shubra-chetan-2725536",
       "Position": "Program Advisor",
       "Image": "https://media-exp1.licdn.com/dms/image/C4E03AQEngSWzI1ZJog/profile-displayphoto-shrink_800_800/0/1517688260606?e=1637193600&v=beta&t=dYx0g7g-eDGDCkiAuDHjW7sGpJn6tgub94EKViwDOxQ"
-    }
-  ],
-  "Outreach Advisor": [
-    {
-      "Name": "Jagmeet Kaur",
-      "LinkedIn": "jagmeet-kaur-3044511a0/",
-      "Position": "Outreach Advisor",
-
-      "Image": "https://sme.snu.edu.in/sites/default/files/styles/image_size_245_290/public/default_images/photo-not-availabale02_0.jpg?itok=_2m8hCVj"
-    },
-    {
-      "Name": "Aparna Mishra",
-      "LinkedIn": "aparna-p-mishra",
-      "Position": "Outreach Advisor",
-
-      "Image": "https://media-exp1.licdn.com/dms/image/C5603AQHxbBK9Py7cyg/profile-displayphoto-shrink_800_800/0/1609945191218?e=1637193600&v=beta&t=DRIbjxHIyF5JpcKTUCvmVsd3bOPwVSR5_gRPmq_O6BI"
-    }
-  ],
-  "Sponsorship Advisor": [
-    {
-      "Name": "Lakshya Kabra",
-      "LinkedIn": "lakshya-kabra-614b9515",
-      "Position": "Sponsorship Advisor",
-      "Image": "https://media-exp1.licdn.com/dms/image/C5103AQH7cp_7bYlm2g/profile-displayphoto-shrink_800_800/0/1542713880513?e=1637193600&v=beta&t=M5PaSMoANt5lGM_tCVMUdN2WPb1g5j4f6wYwEkTEyc8"
     }
   ]
 }
