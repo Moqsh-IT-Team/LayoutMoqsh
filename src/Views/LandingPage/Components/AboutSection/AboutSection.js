@@ -14,7 +14,7 @@ import club4 from "../../../../Assets/Images/ClubLogo4.jpeg";
 import club5 from "../../../../Assets/Images/ClubLogo5.jpg";
 import club6 from "../../../../Assets/Images/ClubLogo6.jpg";
 import club7 from "../../../../Assets/Images/ClubLogo7.png";
-
+ 
 function AboutSection() {
   const AUTOPLAY_INTERVAL = 2500;
   const [ClubsRef, ClubemblaApi] = useEmblaCarousel({ loop: true });
