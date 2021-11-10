@@ -2,14 +2,19 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;1,500&display=swap");
 
+p {
+  display: flex;
+  position: relative;
+}
+
 h1,
 h2 {
   font-family: "Raleway";
   width: auto;
   text-align: center;
- .hashtag{
-   font-size: 3.2rem;
- }
+  .hashtag {
+    font-size: 3.2rem;
+  }
 }
 
 .moqsh-logo {
@@ -57,12 +62,14 @@ h2 {
 }
 .row-2 h2 {
   margin-top: 10px;
+  font-size: 2rem;
   font-style: italic;
   color: white;
 }
 .row-2 h1 {
   filter: drop-shadow(0 0 1rem black);
   padding: 0 20px;
+  font-size: 3rem;
 }
 .row-3 {
   margin-bottom: 35px;
@@ -100,7 +107,7 @@ h2 {
   h2 {
     font-size: 1.6rem;
     text-align: center;
-    .hashtag{
+    .hashtag {
       font-size: 1.4rem;
     }
   }

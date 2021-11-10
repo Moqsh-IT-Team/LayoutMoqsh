@@ -8,11 +8,13 @@ function LandingSection() {
       <div className="row-1 flex">
         <img className="moqsh-logo" src={moqsh} alt="Moqsh Logo" />
         <h1>MOQSH</h1>
+        <br/>
+        <p>2021-22</p>
       </div>
       <div className="row-2 ">
-        <h1>THE ANNUAL MANAGMENT FEST OF SNU</h1>
+        <h1>THE ANNUAL MANAGEMENT FEST OF SNU</h1>
         <h2>
-          Redefining <span>the future </span>
+          Redefining <span>the Impossible </span>
           <br />
           <span className="hashtag">#GrowAgainstAllTheOdds</span>
         </h2>

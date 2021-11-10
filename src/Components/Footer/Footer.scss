@@ -47,6 +47,7 @@
       width: 260px;
       font-family: "PT Serif", serif;
       @include make-flex();
+      color: white;
 
       &--heading {
         color: #52595e;

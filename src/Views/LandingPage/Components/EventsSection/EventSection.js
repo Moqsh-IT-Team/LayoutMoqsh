@@ -13,7 +13,8 @@ import Markitact from "../../../../Assets/Images/ClubLogo2.jpeg";
 import Bizvilla from "../../../../Assets/Images/ClubLogo4.jpeg";
 import Externix from "../../../../Assets/Events/CONSULTAR.png";
 import HRythm from "../../../../Assets/Images/ClubLogo3.jpeg";
-import Moqsh from "../../../../Assets/Images/logo.jpg";
+import Transcend from "../../../../Assets/Images/Transcend.jpeg";
+import Finalytix from "../../../../Assets/Images/Finalytix.jpeg";
 
 function EventSection() {
   let options = { loop: true, startIndex: 1 };
@@ -45,12 +46,12 @@ function EventSection() {
           <div className="embla__container">
             <Card
               className="embla__slide"
-              title="KAUTILYA"
+              title="Trend Analysis & The Auctions"
               src="https://dare2compete.com/competition/kautilya-2021-trend-analysis-and-auctions-moqsh-2020-shiv-nadar-university-snu-greater-noida-197580"
               ImgSrc={Kautilya}
             />
             <Card
-              className="embla__slide selected"
+              className="embla__slide"
               title="Ideonator 6.0"
               // style={{ width: "90%", height: "auto" }}
               src="https://dare2compete.com/competition/ideonator-60-moqsh-2021-22-shiv-nadar-university-snu-greater-noida-196995"
@@ -82,9 +83,15 @@ function EventSection() {
             />
             <Card
               className="embla__slide"
-              title="Transcend'21-22"
+              title="Transcend'21"
               src="https://dare2compete.com/conference/transcend21-the-corporate-talk-shiv-nadar-university-snu-greater-noida-196983"
-              ImgSrc={Moqsh}
+              ImgSrc={Transcend}
+            />
+            <Card
+              className="embla__slide"
+              title="Crack the Case"
+              src="https://dare2compete.com/competition/bull-bear-60-moqsh-2021-22-shiv-nadar-university-snu-greater-noida-196994"
+              ImgSrc={Finalytix}
             />
           </div>
         </div>

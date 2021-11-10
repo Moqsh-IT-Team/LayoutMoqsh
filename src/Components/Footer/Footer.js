@@ -16,7 +16,7 @@ function Footer() {
         <div className="FooterSection__Top__Contact">
           <span className="FooterSection__Top__Contact--heading">Mail</span>
           <span className="FooterSection__Top__Contact--text first">
-            Pawan Verma - <i>Moqsh President</i> <br /> pv635@snu.edu.in
+            smemoqsh@snu.edu.in
           </span>
           <span className="FooterSection__Top__Contact--heading">Phone</span>
           <span className="FooterSection__Top__Contact--text">
@@ -32,7 +32,7 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           className="FooterSection__Icons--Linkedin"
-          href="https://www.linkedin.com/in/sme%20-moqsh-321226150/"
+          href="https://www.linkedin.com/in/sme-moqsh-321226150/"
         >
           <GrLinkedinOption />
         </a>

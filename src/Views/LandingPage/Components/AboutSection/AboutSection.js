@@ -41,7 +41,7 @@ function AboutSection() {
         <p className="AboutSection__Text__Subtext">
           MOQSH, the place where ideas have a home, is a business fest put
           together by the School of Management and Entrepreneurship, SNU to give
-          students all across the country a chance to be a part of exciting
+          students all across the globe a chance to be a part of exciting
           competitions in every field. From Marketing to Human Resources, Moqsh
           encompasses all departments and puts you in real life situations with
           competitions that redefine your practical knowledge. We also build a
