@@ -6,14 +6,19 @@
   z-index: 1 !important;
   // margin: 0 -21px !important;
   // img {
-    // height: 85% !important;
-    // position: absolute;
-    // height: 80% !important;
-    // width: 100% !important;
-    // top: 0px;
-    // border-radius: 20px 20px 0 0;
-    // width: 85% !important;
+  // height: 85% !important;
+  // position: absolute;
+  // height: 80% !important;
+  // width: 100% !important;
+  // top: 0px;
+  // border-radius: 20px 20px 0 0;
+  // width: 85% !important;
   // }
+  .Card__title {
+    // background-color: #f58f8f;
+    border-radius: 20px 20px 0 0;
+    // color: rgb(255, 255, 255);
+  }
 }
 
 .Card {
@@ -24,7 +29,7 @@
   border-radius: 20px;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.37);
   background-color: white;
-  padding: 15px;
+  padding-bottom: 15px;
 
   &__title {
     width: 100%;
@@ -33,6 +38,7 @@
     font-size: 2rem;
     text-align: center;
     height: auto;
+    padding: 15px;
   }
 
   &__image {

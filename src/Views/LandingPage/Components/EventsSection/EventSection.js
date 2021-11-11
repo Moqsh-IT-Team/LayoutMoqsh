@@ -51,7 +51,7 @@ function EventSection() {
               ImgSrc={Kautilya}
             />
             <Card
-              className="embla__slide"
+              className="embla__slide selected"
               title="Ideonator 6.0"
               // style={{ width: "90%", height: "auto" }}
               src="https://dare2compete.com/competition/ideonator-60-moqsh-2021-22-shiv-nadar-university-snu-greater-noida-196995"
