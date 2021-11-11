@@ -100,7 +100,7 @@ function Header() {
             rel="noopener noreferrer"
             className="Header__GoogleForm"
           >
-            Need help?
+            Register Now!
             <img src={Form} alt="Google form" />
           </a>
         )}
