@@ -11,7 +11,7 @@ h1,
 h2 {
   font-family: "Raleway";
   width: auto;
-  text-align: center; 
+  text-align: center;
   .hashtag {
     font-size: 3.2rem;
   }
@@ -48,7 +48,7 @@ h2 {
   color: white;
   font-size: 2.5rem;
   font-weight: bold;
-  &__title{
+  &__title {
     @include make-flex();
   }
 }
@@ -69,7 +69,6 @@ h2 {
   font-size: 2rem;
   font-style: italic;
   color: white;
-
 }
 .row-2 h1 {
   filter: drop-shadow(0 0 1rem black);
@@ -94,7 +93,8 @@ h2 {
 
 @media only screen and (max-width: 620px) {
   .LandingSection {
-    height: calc(100vh - 75px);
+    // height: calc(100vh - 75px);
+    height: fit-content;
     margin-top: 75px;
   }
   .moqsh-logo {
@@ -104,6 +104,11 @@ h2 {
   .row-1 {
     flex-direction: column;
     margin-top: 40px;
+    &__title {
+      i {
+        @include make-flex();
+      }
+    }
   }
   .row-1 h1 {
     font-size: 4.1rem;
