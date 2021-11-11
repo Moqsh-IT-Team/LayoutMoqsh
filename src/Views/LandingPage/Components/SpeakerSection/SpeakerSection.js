@@ -12,7 +12,7 @@ import SpeakerCards from "./Components/SpeakerCards/SpeakerCards";
 // import Accordion from "../../../../Components/Accordion/Accordion";
 
 function SpeakerSection() {
-  return (
+  return ( 
     <section id="SpeakerSection" className="SpeakerSection">
       <SectionHeader text="Our Speakers" />
       <div className="SpeakerSection__Container">
